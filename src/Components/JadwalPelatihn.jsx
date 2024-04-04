@@ -8,8 +8,8 @@ const schedules = [
     { day: "Jumat", time: "08:00 - 17:00 WIB" },
     { day: "Sabtu", time: "08:00 - 14:00 WIB" },
 ]
-const colors = ["bg-red-200", "bg-blue-200", "bg-green-200", "bg-yellow-200", "bg-pink-200", "bg-sky-200"];
-const textColor = ["text-red-600", "text-blue-600", "text-green-600", "text-yellow-600", "text-pink-600", "text-sky-600"];
+const colors = ["bg-red-200", "bg-blue-200", "bg-green-200", "bg-yellow-200", "bg-pink-200", "bg-violet-200"];
+const textColor = ["text-red-600", "text-blue-600", "text-green-600", "text-yellow-600", "text-pink-600", "text-violet-600"];
 
 export const JadwalPelatihan = () => {
     return (
@@ -32,9 +32,9 @@ export const JadwalPelatihan = () => {
                                 </div>
                             ))}
                         </div>
-                        <p className="text-sm self-end flex gap-1 items-center lg:hidden">
+                        <p className="text-sm self-end flex gap-1 items-center lg:hidden -mt-10">
                             swipe
-                            <FaArrowRight/>
+                            <FaArrowRight />
                         </p>
                     </div>
                 </div>

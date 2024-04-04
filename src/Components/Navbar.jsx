@@ -1,7 +1,25 @@
+'use client'
+
+import { useEffect, useState } from "react";
+
 export const Navbar = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            setIsScrolled(scrollPosition > 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
         <>
-            <div className="navbar bg-[#ffffff76] backdrop-blur-lg fixed z-50 ">
+            <div className={`navbar ${isScrolled ? "bg-[#ffffff76]" : "bg-white"} duration-300 ease-in-out backdrop-blur-lg fixed z-50`}>
                 <div className="navbar-start lg:pl-24">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

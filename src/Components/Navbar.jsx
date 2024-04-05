@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export const Navbar = () => {
@@ -40,20 +41,36 @@ export const Navbar = () => {
                     <a className="text-xl font-bold">Hidamari</a>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">
-                            <li><a>Home</a></li>
-                            <li><a>Program</a></li>
-                            <li><a>Galery</a></li>
-                            <li><a>Tentang Kami</a></li>
-                            <li><a>FAQ</a></li>
-                            {/* <li>
-                            <details>
-                                <summary>Parent</summary>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </details>
-                        </li> */}
+                            <li>
+                                <Link
+                                    href={"/"}>
+                                    Home
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    href={"program"}>
+                                    Program
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    href={"gallery"}>
+                                    Gallery
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    href={"about-us"}>
+                                    About Us
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    href={"faq"}>
+                                    FAQ
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </div>

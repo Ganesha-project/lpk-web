@@ -3,6 +3,7 @@ import { BannerMobile } from "@/Components/BannerMobile";
 import { JadwalPelatihan } from "@/Components/JadwalPelatihn";
 import { Keunggulan } from "@/Components/Keunggulan";
 import { Program } from "@/Components/Program";
+import { Review } from "@/Components/Review";
 import { WhyUs } from "@/Components/WhyUs";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Program />
       <WhyUs />
       <Keunggulan />
+      <Review />
     </>
   );
 }

@@ -2,7 +2,7 @@
 import * as Icons from "react-icons/fa6"; // Import semua ikon dari fa6
 import * as RiIcons from "react-icons/ri"; // Import semua ikon dari Ri
 import * as MdIcons from "react-icons/md";
-import  * as Fa6Icons from "react-icons/fa6";
+import * as Fa6Icons from "react-icons/fa6";
 import * as FaIcons from "react-icons/fa";
 const Keunggulan = [
   {
@@ -53,7 +53,7 @@ const textColor = ["text-red-900", "text-red-900", "text-red-100", "text-red-100
 export const AccordionKeunggulan = () => {
   return (
     <>
-      <div className="flex flex-col gap-3 w-[80%]">
+      <div className="flex flex-col gap-3 lg:w-[80%]">
         {Keunggulan.map((el, index) => {
           const IconComponent = IconMap[el.icon];
           return (
@@ -63,16 +63,7 @@ export const AccordionKeunggulan = () => {
               className={`${colors[index % colors.length]} ${textColor[index % textColor.length]} collapse collapse-arrow rounded-none border border-gray-800`}>
               <input type="radio" name="my-accordion-2" className="w-full" />
               <div className="collapse-title text-xl font-medium flex items-center gap-3">
-                {IconComponent && <IconComponent size={25}/>}
-                {/* {el.icon === "FaCheckDouble"
-                || el.icon === "RiSparkling2Fill"
-                ?
-                <FaCheckDouble />
-                :
-                <FaMoneyCheck/>
-                :
-                <RiSparkling2Fill/>
-                } */}
+                {IconComponent && <IconComponent size={25} />}
                 {el.name}
               </div>
               <div className="collapse-content">

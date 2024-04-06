@@ -1,10 +1,13 @@
 'use client'
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const path = usePathname()
+    const productsPath = path.startsWith('/program') ;
 
     useEffect(() => {
         const handleScroll = () => {
@@ -20,7 +23,7 @@ export const Navbar = () => {
     }, []);
     return (
         <>
-            <div className={`navbar ${isScrolled ? "bg-[#ffffff76]" : "bg-white"} duration-300 ease-in-out backdrop-blur-lg fixed z-50`}>
+            <div className={`navbar ${isScrolled ? "bg-[#ffffff76] backdrop-blur-lg !text-gray-800" : "bg-transparent text-gray-800"} ${productsPath ? "bg-[#ffffff76] text-white": "text-gray-800"} duration-300 ease-in-out fixed z-50`}>
                 <div className="navbar-start lg:pl-24">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -77,7 +80,7 @@ export const Navbar = () => {
                 <div className="navbar-end lg:pr-24">
                     <a
                         href=""
-                        className="bg-red-600 hover:bg-red-400 hover:scale-95 duration-300 font-medium text-white py-2 px-5 rounded-full">Contact Us</a>
+                        className="bg-red-600 hover:bg-red-800 hover:scale-95 duration-300 font-medium text-white py-2 px-5 rounded-full">Contact Us</a>
                 </div>
             </div>
         </>

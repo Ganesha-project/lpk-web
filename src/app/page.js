@@ -1,3 +1,4 @@
+import { AnimateScroll } from "@/Components/AnimateScroll";
 import { Banner } from "@/Components/Banner";
 import { BannerMobile } from "@/Components/BannerMobile";
 import { JadwalPelatihan } from "@/Components/JadwalPelatihn";
@@ -11,11 +12,21 @@ export default function Home() {
     <>
       <Banner />
       <BannerMobile />
-      <JadwalPelatihan />
-      <Program />
-      <WhyUs />
-      <Keunggulan />
-      <Review />
+      <AnimateScroll animation={'animate__fadeInUp'}>
+        <JadwalPelatihan />
+      </AnimateScroll>
+      <AnimateScroll animation={'animate__fadeInUp'}>
+        <Program />
+      </AnimateScroll>
+      <AnimateScroll animation={'animate__fadeInUp'}>
+        <WhyUs />
+      </AnimateScroll>
+      <AnimateScroll animation={'animate__fadeInUp'}>
+        <Keunggulan />
+      </AnimateScroll>
+      <AnimateScroll animation={'animate__fadeInUp'}>
+        <Review />
+      </AnimateScroll>
     </>
   );
 }

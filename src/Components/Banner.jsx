@@ -8,7 +8,7 @@ import Image from "next/image";
 export const Banner = () => {
     return (
         <>
-            <div className="hidden lg:flex">
+            <div className="hidden lg:flex animate__animated animate__fadeInDown animate_slow">
                 <section className="lg:mx-24 mt-5 lg:pt-[1lvh] flex flex-col justify-center pt-12 mx-4 min-h-screen">
                     <div className="flex">
                         <div className="lg:p-12 p-5 border-t border-b border-gray-700 lg:w-[65%]">
@@ -21,7 +21,7 @@ export const Banner = () => {
                                     Cek paket dan program kami sekarang!
                                 </p>
                                 <a href=""
-                                    className="flex lg:text-xl items-center gap-3 py-4 px-5 bg-red-700 rounded-full text-white w-fit hover:scale-90 duration-300 hover:bg-red-500"
+                                    className="flex lg:text-xl items-center gap-3 py-4 px-5 bg-red-700 rounded-full text-white w-fit hover:scale-90 duration-300 hover:bg-red-900"
                                 >
                                     Start
                                     <FaArrowRightLong />

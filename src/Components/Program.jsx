@@ -35,7 +35,7 @@ export const Program = () => {
                     <h1 className="lg:text-6xl text-2xl pl-3 border-l-4 border-red-500 font-medium">
                         Program Kami
                     </h1>
-                    <div className="flex carousel lg:flex-wrap gap-3 lg:justify-center">
+                    <div className="flex carousel lg:flex-wrap gap-3 lg:justify-between">
                         {program.map((el, index) => (
                             <div
                                 className="lg:w-[24%] w-[70%] flex flex-col carousel-item"
@@ -48,23 +48,23 @@ export const Program = () => {
                                     className="object-cover w-full h-[40lvh] border border-gray-800"
                                     alt=""
                                 />
-                                <div className="flex-grow p-3 bg-red-200 mt-3 border border-gray-800 flex flex-col justify-center items-center">
+                                <div className="flex-grow p-3 bg-red-200 mt-4 border border-gray-800 flex flex-col justify-center items-center">
                                     <h1 className="text-xl text-center font-medium">
                                         {el.type}
                                     </h1>
                                     <p className="mt-3 text-center flex-grow">
                                         {el.desc}
                                     </p>
-                                    <a
-                                        className="px-4 py-2 bg-red-500 text-white rounded-full mt-5 w-fit duration-300 ease-in-out hover:scale-125 hover:bg-red-400"
-                                        href=""
-                                    >
-                                        Read More
-                                    </a>
                                 </div>
                             </div>
                         ))}
                     </div>
+                    <a
+                        className="px-4 py-2 font-bold bg-red-500 text-white border border-gray-900 text-center duration-300 ease-in-out hover:scale-95 hover:bg-red-900"
+                        href=""
+                    >
+                        Read More
+                    </a>
                 </div>
             </section>
         </>

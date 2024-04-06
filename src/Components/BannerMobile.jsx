@@ -5,7 +5,7 @@ import { TfiMedall } from "react-icons/tfi"
 export const BannerMobile = () => {
     return (
         <>
-            <section className="flex lg:hidden">
+            <section className="flex lg:hidden animate__animated animate__fadeInDown animate_slow">
                 <div className="min-h-screen flex flex-col">
                     <div className="h-auto flex-grow lg:border border-gray-700 relative">
                         <Image

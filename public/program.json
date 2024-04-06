@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "number": "01",
+        "title": "Bekerja Sambil Kuliah",
+        "description": "ini dirancang untuk mahasiswa yang ingin mendapatkan pengalaman kerja praktis sambil menyelesaikan pendidikan mereka. Dengan kerja sambil kuliah, Anda dapat mengembangkan keterampilan yang diperlukan di dunia kerja Jepang yang kompetitif sambil memperluas jaringan profesional Anda.",
+        "requirements": [
+            "Umur 19 – 28 tahun bagi lulusan SMK Teknik/SMU.",
+            "Umur Maks 29 tahun bagi lulusan akademi, diploma dan universitas.",
+            "Sehat Jasmani dan Rohani.",
+            "Tinggi Min. 160 (Laki-laki), 150 (Perempuan).",
+            "Bersedia mengikuti program selama 3 tahun (sesuai kontrak), mengikuti ketentuan yang berlaku dan belum pernah mengikuti program magang di Jepang.",
+            "Lulus seleksi yang diselanggaran oleh LPK NTC."
+        ],
+        "administrasi": [
+            "Fotokopi Ijasah (SD, SMP, SMA/SMK, Diploma/Universitas) 3 lembar.",
+            "Kartu Pencari Kerja (Kartu Kuning) 3 lembar.",
+            "Kartu Tanda Penduduk (KTP) 3 lembar.",
+            "Kartu Keluarga (KK) 3 lembar.",
+            "Akte Kelahiran 3 lembar.",
+            "Surat Ijin Orang Tua/Wali/Suami/Istri.",
+            "Surat pernyataan belum pernah mengikuti program Pemagangan ke Jepang.",
+            "Pas Foto terbaru latar belakang merah 4 x 6 dan 3 x 4 masing-masing 6 lembar dan CD foto."
+        ]
+    },
+    {
+        "id": 2,
+        "number": "02",
+        "title": "Magang di Jepang",
+        "description": "magang kami memberikan kesempatan berharga bagi individu yang ingin mendapatkan pengalaman kerja langsung di lingkungan kerja Jepang. Dengan magang di Jepang, Anda dapat memperdalam pemahaman Anda tentang industri tertentu dan membangun keterampilan yang relevan dengan kebutuhan pasar kerja saat ini.",
+        "requirements": [
+            "Umur 19 – 28 tahun bagi lulusan SMK Teknik/SMU.",
+            "Umur Maks 29 tahun bagi lulusan akademi, diploma dan universitas.",
+            "Sehat Jasmani dan Rohani.",
+            "Tinggi Min. 160 (Laki-laki), 150 (Perempuan).",
+            "Bersedia mengikuti program selama 3 tahun (sesuai kontrak), mengikuti ketentuan yang berlaku dan belum pernah mengikuti program magang di Jepang.",
+            "Lulus seleksi yang diselanggaran oleh LPK NTC."
+        ],
+        "administrasi": [
+            "Fotokopi Ijasah (SD, SMP, SMA/SMK, Diploma/Universitas) 3 lembar.",
+            "Kartu Pencari Kerja (Kartu Kuning) 3 lembar.",
+            "Kartu Tanda Penduduk (KTP) 3 lembar.",
+            "Kartu Keluarga (KK) 3 lembar.",
+            "Akte Kelahiran 3 lembar.",
+            "Surat Ijin Orang Tua/Wali/Suami/Istri.",
+            "Surat pernyataan belum pernah mengikuti program Pemagangan ke Jepang.",
+            "Pas Foto terbaru latar belakang merah 4 x 6 dan 3 x 4 masing-masing 6 lembar dan CD foto."
+        ]
+    },
+    {
+        "id": 3,
+        "number": "03",
+        "title": "Program Caregiver (Perawat)",
+        "description": "perawat kami bertujuan untuk melatih individu yang tertarik dalam bidang perawatan kesehatan dan ingin menjadi profesional perawat yang berkualifikasi di Jepang. Dengan fokus pada keterampilan klinis, keahlian komunikasi, dan pemahaman tentang kebutuhan pasien, program ini akan mempersiapkan Anda untuk sukses dalam karir perawatan kesehatan yang memuaskan.",
+        "requirements": [
+            "WNI, Sehat jasmani & Rohani",
+            "Perempuan/Laki-laki",
+            "Lulusan D1,2,3/S1 Keperawatan/Kebidanan/Fisioterapi atau pernah kerja sebagai Caregiver di Jepang melalui program EPA",
+            "Usia 19-35 tahun. Bagi yang pernah mengikuti program EPA maksimal sampai umur 37 tahun.",
+            "Belum pernah mengikuti program magang",
+            "Bersedia mengikuti pelatihan Bahasa Jepang dan prosedur yang berlaku.",
+            "Bagi yang bukan lulusan D1,2,3/S1 Keperawatan/Kebidanan/Fisioterapi ada kelas tambahan terkait keperawatan.Mendapat izin orang tua/wali untuk program pemagangan 3 tahun di Jepang.",
+            "Tidak memiliki riwayat penyakit dalam seperti : TBC, Kanker, Asma, Jantung, Hepatitis, dll.",
+            "Tidak bertato, tidak bertindik atau memiliki bekas tindik."
+        ],
+        "administrasi": [
+            "Fotokopi Ijasah (SD, SMP, SMA/SMK, Diploma/Universitas) 3 lembar.",
+            "Kartu Pencari Kerja (Kartu Kuning) 3 lembar.",
+            "Kartu Tanda Penduduk (KTP) 3 lembar.",
+            "Kartu Keluarga (KK) 3 lembar.",
+            "Akte Kelahiran 3 lembar.",
+            "Surat Ijin Orang Tua/Wali/Suami/Istri.",
+            "Surat pernyataan belum pernah mengikuti program Pemagangan ke Jepang.",
+            "Pas Foto terbaru latar belakang merah 4 x 6 dan 3 x 4 masing-masing 6 lembar dan CD foto."
+        ]
+    },
+    {
+        "id": 4,
+        "number": "04",
+        "title": "Program Engineering",
+        "description": "ini ditujukan untuk individu yang tertarik dalam bidang teknik dan ingin memperoleh keterampilan teknis yang diperlukan untuk menjadi profesional teknik yang sukses di Jepang. Dengan kurikulum yang berfokus pada teori dan praktik, program ini akan mempersiapkan Anda untuk menghadapi tantangan di industri teknik yang cepat berkembang.",
+        "special_requirements": [
+            "Tamatan S1/D3 jurusan Teknik",
+            "Bagi mantan magang Jepang sudah menetap kembali di Indonesia minimal 2 tahun",
+            "Memiliki kemampuan bahasa Jepang setara N3 (bagi yang belum N3 bisa mengikuti pelatihan di tempat pelatihan kami)"
+        ],
+        "requirements": [
+            "Tinggi badan minimal 160 cm dengan berat badan ideal",
+            "Usia maksimal 38 tahun"
+        ],
+        "administrasi": [
+            "Biodata Diri (format CV dalam bahasa Jepang sudah kami sediakan)",
+            "Scan ijazah dan transkrip nilai",
+            "Scan sertifikat pendukung",
+            "Scan KTP dan KK",
+            "JITCO dan CV saat magang (hanya berlaku bagi mantan magang Jepang)",
+            "Surat berbadan sehat dari dokter",
+            "Sertifikat bahasa Jepang minimal setara N3."
+        ]
+    }
+]

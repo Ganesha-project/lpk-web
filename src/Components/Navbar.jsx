@@ -120,9 +120,9 @@ export const Navbar = () => {
                     </div>
                 </div>
                 <div className="navbar-end lg:pr-24">
-                    <a
-                        href=""
-                        className="bg-red-600 hover:bg-red-800 hover:scale-95 duration-300 font-medium text-white py-2 px-5 rounded-full">Contact Us</a>
+                    <Link
+                        href={'contact-us'}
+                        className={`${path === '/contact-us' ? "bg-red-600 font-bold": "bg-slate-700 font-medium"}  hover:bg-red-800 hover:scale-95 duration-300 text-white py-2 px-5 rounded-full`}>Contact Us</Link>
                 </div>
             </div>
         </>

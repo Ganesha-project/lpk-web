@@ -3,6 +3,7 @@ import { AboutUsMobile } from "@/Components/AboutUsPage/AboutUsMobile";
 import { OurProgram } from "@/Components/AboutUsPage/OurProgram";
 import { Profiles } from "@/Components/AboutUsPage/Profiles";
 import { VisionMision } from "@/Components/AboutUsPage/VisionMision";
+import { AnimateScroll } from "@/Components/AnimateScroll";
 import { BannerR } from "@/Components/Reusable/BannerR";
 import { readFile } from 'fs/promises'
 
@@ -16,11 +17,19 @@ export default async function AboutUsPage() {
   return (
     <>
       <BannerR imageBackground={imageBackground} title={title} descriptions={descriptions} />
-      <AboutUs />
-      <AboutUsMobile />
-      <VisionMision />
-      <Profiles />
-      <OurProgram data={data}/>
+      <AnimateScroll animation={'animate__fadeInUp'}>
+        <AboutUs />
+      </AnimateScroll>
+      <AnimateScroll animation={'animate__fadeInUp'}>
+        <AboutUsMobile />
+      </AnimateScroll>
+        <Profiles />
+      <AnimateScroll animation={'animate__fadeInUp'}>
+        <VisionMision />
+      </AnimateScroll>
+      <AnimateScroll animation={'animate__fadeInUp'}>
+        <OurProgram data={data} />
+      </AnimateScroll>
     </>
   );
 }

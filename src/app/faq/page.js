@@ -2,6 +2,7 @@ import { readFile } from 'fs/promises'
 import { ContentFaq } from "@/Components/FAQPage/ContentFaq";
 import { Izin } from '@/Components/FAQPage/Izin';
 import { BgGrid } from '@/Components/FAQPage/BgGrid';
+import { QuestionForm } from '@/Components/FAQPage/QuestionForm';
 
 export default async function Faq() {
   let rawData = await readFile('public/faq.json', 'utf-8')
@@ -14,7 +15,8 @@ export default async function Faq() {
     <>
       <BgGrid>
         <ContentFaq data={data} />
-        <Izin data={dataIzin}/>
+        <Izin data={dataIzin} />
+        <QuestionForm />
       </BgGrid>
     </>
   );

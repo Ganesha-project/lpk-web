@@ -4,7 +4,7 @@ import Link from "next/link"
 export const BannerR = ({ imageBackground, title, descriptions }) => {
     return (
         <>
-            <section className="relative">
+            <section className="relative animate__animated animate__fadeInDown animate_slow">
                 <Image
                     width={1000}
                     height={1000}

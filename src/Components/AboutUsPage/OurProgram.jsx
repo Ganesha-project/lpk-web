@@ -19,7 +19,7 @@ export const OurProgram = ({ data }) => {
                                             {el.title}
                                         </p>
                                     </div>
-                                    <div className="absolute inset-5 flex flex-col justify-end">
+                                    <div className="absolute inset-2 lg:inset-5 flex flex-col justify-end">
                                         <a
                                             href=""
                                             className="bg-red-500 w-fit hover:bg-red-600 font-bold backdrop-blur-md px-3 py-2 text-white text-xl opacity-0 duration-300 group-hover:opacity-100 scale-0 group-hover:scale-100">

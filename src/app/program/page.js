@@ -1,3 +1,4 @@
+import { AnimateScroll } from "@/Components/AnimateScroll";
 import { ProgramList } from "@/Components/ProgramPage/ProgramList";
 import { BannerR } from "@/Components/Reusable/BannerR";
 import { WhyUs } from "@/Components/WhyUs";
@@ -13,7 +14,9 @@ export default async function Program() {
         <>
             <BannerR imageBackground={imageBackground} title={title} descriptions={descriptions} />
             <ProgramList data={data} />
-            <WhyUs />
+            <AnimateScroll animation={'animate__fadeInUp'}>
+                <WhyUs />
+            </AnimateScroll>
         </>
     );
 }

@@ -11,6 +11,7 @@ export const Navbar = () => {
     const path = usePathname()
     const specialPath = path.startsWith('/program') || path.startsWith('/about-us');
     const faqPath = path.startsWith('/faq')
+    const homePath = path.startsWith('/')
 
     useEffect(() => {
         const handleScroll = () => {
@@ -26,7 +27,7 @@ export const Navbar = () => {
     }, []);
     return (
         <>
-            <div className={`navbar ${isScrolled ? "bg-[#00000076] backdrop-blur-lg !text-white" : "bg-transparent text-white lg:text-gray-800"} ${specialPath ? "!text-white" : "text-gray-800"} ${faqPath ? '!text-gray-800' : ''} duration-300 ease-in-out fixed z-50`}>
+            <div className={`navbar ${isScrolled ? "bg-[#00000076] backdrop-blur-lg !text-white" : "bg-transparent lg:text-gray-800"} ${specialPath ? "!text-white" : "text-gray-800"} ${faqPath ? 'text-slate-800 lg:text-slate-800' : ''} ${homePath ? "text-white lg:text-gray-900":"text-gray-900"} duration-300 ease-in-out fixed z-50`}>
                 <div className="navbar-start lg:pl-24">
                     <div className="dropdown">
                         <div className="drawer">

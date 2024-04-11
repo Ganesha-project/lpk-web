@@ -2,7 +2,7 @@ import { BsFillQuestionCircleFill } from "react-icons/bs";
 export const ContentFaq = ({ data }) => {
     return (
         <>
-            <section className="gridBg lg:p-24 p-5 flex items-center justify-center flex-col min-h-screen pt-24">
+            <section className="lg:p-24 p-5 flex items-center justify-center flex-col pt-24">
                 <h1 className="lg:text-5xl text-3xl text-center mb-5">
                     Frequently Asked Questions
                 </h1>

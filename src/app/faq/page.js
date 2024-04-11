@@ -1,12 +1,21 @@
 import { readFile } from 'fs/promises'
 import { ContentFaq } from "@/Components/FAQPage/ContentFaq";
+import { Izin } from '@/Components/FAQPage/Izin';
+import { BgGrid } from '@/Components/FAQPage/BgGrid';
 
 export default async function Faq() {
   let rawData = await readFile('public/faq.json', 'utf-8')
   let data = JSON.parse(rawData)
+
+  let rawDataIzin = await readFile('public/izin.json', 'utf-8')
+  let dataIzin = JSON.parse(rawDataIzin)
+
   return (
     <>
-      <ContentFaq data={data} />
+      <BgGrid>
+        <ContentFaq data={data} />
+        <Izin data={dataIzin}/>
+      </BgGrid>
     </>
   );
 }

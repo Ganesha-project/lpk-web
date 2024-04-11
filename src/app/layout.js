@@ -16,10 +16,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body className={lato.className}>
-        <section>
           <Navbar />
           {children}
-        </section>
       </body>
     </html>
   );

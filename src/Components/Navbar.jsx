@@ -3,11 +3,13 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { HiMenuAlt2, HiMenuAlt3 } from "react-icons/hi";
+
 
 export const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const path = usePathname()
-    const productsPath = path.startsWith('/program') || path.startsWith('/about-us');
+    const specialPath = path.startsWith('/program') || path.startsWith('/about-us');
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,58 +25,91 @@ export const Navbar = () => {
     }, []);
     return (
         <>
-            <div className={`navbar ${isScrolled ? "bg-[#ffffff76] backdrop-blur-lg !text-gray-800" : "bg-transparent text-gray-800"} ${productsPath ? "bg-[#ffffff76] text-white": "text-gray-800"} duration-300 ease-in-out fixed z-50`}>
+            <div className={`navbar ${isScrolled ? "bg-[#00000076] backdrop-blur-lg !text-white" : "bg-transparent text-white lg:text-gray-800"} ${specialPath ? "!text-white" : "text-gray-800"} duration-300 ease-in-out fixed z-50`}>
                 <div className="navbar-start lg:pl-24">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                        </div>
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
+                        <div className="drawer">
+                            <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+                            <div tabIndex={0} role="button" className="drawer-content btn btn-ghost btn-circle lg:hidden">
+                                <label htmlFor="my-drawer" className="drawer-button"><HiMenuAlt2 size={25} /></label>
+                            </div>
+                            <div className="drawer-side z-[60]">
+                                <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
+                                <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+                                    {/* Sidebar mobile content here */}
+                                    <li>
+                                        <Link
+                                            className={path === '/' ? 'text-red-600 font-bold' : ''}
+                                            href={"/"}>
+                                            Home
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            className={path === '/program' ? 'text-red-600 font-bold' : ''}
+                                            href={"program"}>
+                                            Program
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            className={path === '/gallery' ? 'text-red-600 font-bold' : ''}
+                                            href={"gallery"}>
+                                            Gallery
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            className={path === '/about-us' ? 'text-red-600 font-bold' : ''}
+                                            href={"about-us"}>
+                                            About Us
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            className={path === '/faq' ? 'text-white bg-red-600 text-center rounded-full font-bold' : ''}
+                                            href={"faq"}>
+                                            FAQ
+                                        </Link>
+                                    </li>
                                 </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
                     <a className="text-xl font-bold">Hidamari</a>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="flex gap-5 text-base ml-5">
                             <li>
                                 <Link
-                                 className={path === '/' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}
+                                    className={path === '/' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}
                                     href={"/"}>
                                     Home
                                 </Link>
                             </li>
                             <li>
                                 <Link
-                                 className={path === '/program' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}
+                                    className={path === '/program' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}
                                     href={"program"}>
                                     Program
                                 </Link>
                             </li>
                             <li>
                                 <Link
-                                 className={path === '/gallery' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}
+                                    className={path === '/gallery' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}
                                     href={"gallery"}>
                                     Gallery
                                 </Link>
                             </li>
                             <li>
                                 <Link
-                                 className={path === '/about-us' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}
+                                    className={path === '/about-us' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}
                                     href={"about-us"}>
                                     About Us
                                 </Link>
                             </li>
                             <li>
                                 <Link
-                                 className={path === '/faq' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}
+                                    className={path === '/faq' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}
                                     href={"faq"}>
                                     FAQ
                                 </Link>

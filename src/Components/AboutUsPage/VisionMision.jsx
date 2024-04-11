@@ -2,24 +2,24 @@ export const VisionMision = () => {
     return (
         <>
             <section className="lg:mx-24 m-5">
-                <div className="flex flex-row justify-between gap-10">
-                    <div className="w-[30%]">
-                        <h1 className="text-7xl font-medium leading-relaxed tracking-wide">
+                <div className="flex flex-col lg:flex-row justify-between gap-10">
+                    <div className="lg:w-[30%]">
+                        <h1 className="text-5xl lg:text-7xl font-medium leading-relaxed tracking-wide">
                             Vision
                         </h1>
-                        <p className="w-[]">
+                        <p className="text-justify lg:text-left">
                             Menjadi pusat unggulan dalam pembekalan keterampilan dan pengetahuan bagi individu yang ingin sukses dalam berkarir di Jepang, serta menjadi mitra yang terpercaya bagi Perusahaan-perusahaan di Jepang dalam mencari talenta yang berkualitas unggul.
                         </p>
                     </div>
                     <img
-                        className="w-[30%] h-[80lvh] object-cover rounded-t-full rounded-b-xl"
+                        className="order-first lg:order-none lg:w-[30%] h-[80lvh] object-cover rounded-t-full rounded-b-xl"
                         src="https://images.unsplash.com/photo-1582116326882-c9ad2e93e1d9?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="" />
-                    <div className="self-end w-[30%]">
-                        <h1 className="text-7xl font-medium leading-relaxed tracking-wide">
+                    <div className="self-end lg:w-[30%]">
+                        <h1 className="text-5xl lg:text-7xl font-medium leading-relaxed tracking-wide">
                             Mision
                         </h1>
-                        <p>
+                        <p className="text-justify lg:text-left">
                             Menyediakan program pelatihan berkualitas tinggi, memberikan dukungan personal, dan membangun kemitraan strategis untuk memastikan kesuksesan karir peserta di Jepang
                         </p>
                         <div className="collapse collapse-plus -mt-4 group">
@@ -29,7 +29,7 @@ export const VisionMision = () => {
                             </div>
                             <div className="collapse-content">
                                 <div className="overflow-auto h-[45lvh]">
-                                    <div class="flex flex-col gap-2">
+                                    <div class="flex flex-col gap-2 bg-red-100 p-3 border border-gray-800">
                                         <div className="flex gap-2">
                                             <p>
                                                 1
@@ -65,14 +65,14 @@ export const VisionMision = () => {
                                                 6
                                             </p>
                                             <p>Menciptakan lingkungan belajar yang inklusif, inspiratif, dan mendukung pertumbuhan pribadi serta profesional peserta pelatihan.</p>
-                                        </div>                                    </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-            </section >
+            </section>
         </>
     )
 }

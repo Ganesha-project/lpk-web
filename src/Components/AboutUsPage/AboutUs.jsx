@@ -7,7 +7,7 @@ export const AboutUs = () => {
         <>
             <section className="min-h-screen hidden lg:inline-block">
                 <div className="lg:p-24 p-5 flex flex-col gap-5">
-                    <h1 className="text-xl lg:text-5xl text-gray-800">
+                    <h1 className="text-5xl text-gray-800">
                         Tentang{' '}
                         <span className="text-transparent bg-clip-text bg-gradient-to-bl from-red-300 to-red-800">
                             LPK Hidamari Kenshu Senta

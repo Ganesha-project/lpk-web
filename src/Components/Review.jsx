@@ -1,4 +1,5 @@
-import { FaQuoteRight } from "react-icons/fa6";
+import { FaArrowRight, FaQuoteRight } from "react-icons/fa6";
+import { KeepAnimate } from "./Reusable/KeepAnimate";
 
 const reviews = [
     {
@@ -19,13 +20,13 @@ export const Review = () => {
     return (
         <>
             <section className="py-16 mx-5 lg:mx-24">
-                <div>
+                <div className="flex flex-col">
                     <h1 className="lg:text-4xl text-2xl pl-3 border-l-4 border-red-500 font-medium">
                         Apa kata mereka tentang <br />LPK Hidamari Kenshu Senta?
                     </h1>
                     <div className="mt-5 flex gap-5 lg:justify-between carousel">
                         {reviews.map((el, index) => (
-                            <div key={index} className="p-5 border gridBg border-gray-800 min-w-96 lg:w-[35%]">
+                            <div key={index} className="p-5 border gridBg border-gray-800 min-w-80 lg:w-[35%]">
                                 <FaQuoteRight className="text-red-500 mb-5" size={50} />
                                 <h1 className="text-2xl font-medium">
                                     {el.name}
@@ -36,6 +37,12 @@ export const Review = () => {
                             </div>
                         ))}
                     </div>
+                    <KeepAnimate duration={'animate__slow'} animation={'animate__shakeX'}>
+                        <p className="text-sm justify-end self-end flex gap-1 items-center lg:hidden animate__animated animate__bounce">
+                            swipe
+                            <FaArrowRight />
+                        </p>
+                    </KeepAnimate>
                 </div>
             </section>
         </>

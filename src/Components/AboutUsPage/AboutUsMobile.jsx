@@ -7,8 +7,11 @@ export const AboutUsMobile = () => {
         <>
             <section className=" min-h-screen inline-block lg:hidden">
                 <div className="lg:p-24 p-5 flex flex-col gap-5">
-                    <h1 className="text-xl lg:text-5xl text-gray-800">
-                        Tentang LPK Hidamari Kenshu Senta
+                    <h1 className="text-3xl font-medium lg:text-5xl text-gray-800">
+                    Tentang{' '}
+                        <span className="text-transparent bg-clip-text bg-gradient-to-bl from-red-300 to-red-800">
+                            LPK Hidamari Kenshu Senta
+                        </span>
                     </h1>
                     <div className="flex flex-col gap-3">
                         <img

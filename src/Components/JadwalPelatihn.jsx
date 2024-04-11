@@ -1,4 +1,5 @@
 import { FaArrowRight } from "react-icons/fa6";
+import { KeepAnimate } from "./Reusable/KeepAnimate";
 
 const schedules = [
     { day: "Senin", time: "08:00 - 17:00 WIB" },
@@ -32,10 +33,12 @@ export const JadwalPelatihan = () => {
                                 </div>
                             ))}
                         </div>
-                        <p className="text-sm self-end flex gap-1 items-center lg:hidden -mt-10">
-                            swipe
-                            <FaArrowRight />
-                        </p>
+                        <KeepAnimate duration={'animate__slow'} animation={'animate__shakeX'}>
+                            <p className="text-sm justify-end self-end flex gap-1 items-center lg:hidden -mt-10">
+                                swipe
+                                <FaArrowRight />
+                            </p>
+                        </KeepAnimate>
                     </div>
                 </div>
             </section>

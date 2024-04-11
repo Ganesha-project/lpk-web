@@ -14,7 +14,7 @@ export const AboutUs = () => {
                         </span>
                     </h1>
                     <div className="">
-                        <img
+                        <Image
                             width={500}
                             height={500}
                             className="w-full h-[50lvh] object-cover"

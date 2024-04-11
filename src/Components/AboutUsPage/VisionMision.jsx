@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export const VisionMision = () => {
     return (
         <>
@@ -11,7 +13,9 @@ export const VisionMision = () => {
                             Menjadi pusat unggulan dalam pembekalan keterampilan dan pengetahuan bagi individu yang ingin sukses dalam berkarir di Jepang, serta menjadi mitra yang terpercaya bagi Perusahaan-perusahaan di Jepang dalam mencari talenta yang berkualitas unggul.
                         </p>
                     </div>
-                    <img
+                    <Image
+                        width={500}
+                        height={500}
                         className="order-first lg:order-none lg:w-[30%] h-[80lvh] object-cover rounded-t-full rounded-b-xl"
                         src="https://images.unsplash.com/photo-1582116326882-c9ad2e93e1d9?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="" />

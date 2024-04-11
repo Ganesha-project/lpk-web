@@ -14,7 +14,7 @@ export const AboutUsMobile = () => {
                         </span>
                     </h1>
                     <div className="flex flex-col gap-3">
-                        <img
+                        <Image
                             width={500}
                             height={500}
                             className="w-full h-[30lvh] object-cover"

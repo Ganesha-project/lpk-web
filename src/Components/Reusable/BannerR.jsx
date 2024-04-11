@@ -18,7 +18,7 @@ export const BannerR = ({ imageBackground, title, descriptions }) => {
                     <p className="lg:w-[50%] text-sm lg:text-base">
                         {descriptions}
                     </p>
-                    <div className="h-2 bg-red-600 lg:w-[50%] rounded-full"></div>
+                    <div className="h-2 bg-red-600 lg:w-[50%]"></div>
                     <Link
                         className="w-fit bg-red-600 hover:bg-red-800 hover:scale-95 duration-300 font-medium text-white py-2 px-4 rounded-full"
                         href="#explore"

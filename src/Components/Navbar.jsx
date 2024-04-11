@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 export const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const path = usePathname()
-    const productsPath = path.startsWith('/program') ;
+    const productsPath = path.startsWith('/program') || path.startsWith('/about-us');
 
     useEffect(() => {
         const handleScroll = () => {
@@ -43,33 +43,38 @@ export const Navbar = () => {
                     </div>
                     <a className="text-xl font-bold">Hidamari</a>
                     <div className="navbar-center hidden lg:flex">
-                        <ul className="menu menu-horizontal px-1">
+                        <ul className="flex gap-5 text-base ml-5">
                             <li>
                                 <Link
+                                 className={path === '/' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}
                                     href={"/"}>
                                     Home
                                 </Link>
                             </li>
                             <li>
                                 <Link
+                                 className={path === '/program' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}
                                     href={"program"}>
                                     Program
                                 </Link>
                             </li>
                             <li>
                                 <Link
+                                 className={path === '/gallery' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}
                                     href={"gallery"}>
                                     Gallery
                                 </Link>
                             </li>
                             <li>
                                 <Link
+                                 className={path === '/about-us' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}
                                     href={"about-us"}>
                                     About Us
                                 </Link>
                             </li>
                             <li>
                                 <Link
+                                 className={path === '/faq' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}
                                     href={"faq"}>
                                     FAQ
                                 </Link>

@@ -13,7 +13,7 @@ export const ProgramList = ({ data }) => {
     return (
         <>
             <div id="explore" />
-            <section className="lg:m-24 m-5 flex flex-col gap-10">
+            <section className="lg:m-24 m-5 flex flex-col gap-24">
                 {data.map((el, index) => (
                     <div key={index} className="flex flex-col gap-5">
                         <div className="flex flex-col lg:flex-row gap-3 lg:justify-between lg:items-end">
@@ -39,7 +39,7 @@ export const ProgramList = ({ data }) => {
                                     width={500}
                                     height={500}
                                     className="border border-gray-800 w-full object-cover lg:h-[15lvw]"
-                                    src="https://img.freepik.com/free-photo/men-women-carrying-backpack-searching-books-library_1150-24656.jpg?w=1800"
+                                    src={el.imageUrl}
                                     alt=""
                                 />
                                 <p className="p-5 border-2 border-red-200 h-fit text-justify">

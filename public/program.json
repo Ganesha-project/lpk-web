@@ -2,6 +2,7 @@
     {
         "id": 1,
         "number": "01",
+        "imageUrl": "https://res.cloudinary.com/dzrh2ogbn/image/upload/v1712390757/LPK%20Asset/gstcyd8kdm9tl8rqpqk8.webp",
         "title": "Bekerja Sambil Kuliah",
         "description": "ini dirancang untuk mahasiswa yang ingin mendapatkan pengalaman kerja praktis sambil menyelesaikan pendidikan mereka. Dengan kerja sambil kuliah, Anda dapat mengembangkan keterampilan yang diperlukan di dunia kerja Jepang yang kompetitif sambil memperluas jaringan profesional Anda.",
         "requirements": [
@@ -26,6 +27,7 @@
     {
         "id": 2,
         "number": "02",
+        "imageUrl": "https://res.cloudinary.com/dzrh2ogbn/image/upload/v1712390757/LPK%20Asset/hjvqdsl88wx42uhtaxym.webp",
         "title": "Magang di Jepang",
         "description": "magang kami memberikan kesempatan berharga bagi individu yang ingin mendapatkan pengalaman kerja langsung di lingkungan kerja Jepang. Dengan magang di Jepang, Anda dapat memperdalam pemahaman Anda tentang industri tertentu dan membangun keterampilan yang relevan dengan kebutuhan pasar kerja saat ini.",
         "requirements": [
@@ -50,6 +52,7 @@
     {
         "id": 3,
         "number": "03",
+        "imageUrl": "https://res.cloudinary.com/dzrh2ogbn/image/upload/v1712390281/LPK%20Asset/nurse.webp",
         "title": "Program Caregiver (Perawat)",
         "description": "perawat kami bertujuan untuk melatih individu yang tertarik dalam bidang perawatan kesehatan dan ingin menjadi profesional perawat yang berkualifikasi di Jepang. Dengan fokus pada keterampilan klinis, keahlian komunikasi, dan pemahaman tentang kebutuhan pasien, program ini akan mempersiapkan Anda untuk sukses dalam karir perawatan kesehatan yang memuaskan.",
         "requirements": [
@@ -77,6 +80,7 @@
     {
         "id": 4,
         "number": "04",
+        "imageUrl": "https://res.cloudinary.com/dzrh2ogbn/image/upload/v1712390758/LPK%20Asset/snulsni8dbugiwwstixt.webp",
         "title": "Program Engineering",
         "description": "ini ditujukan untuk individu yang tertarik dalam bidang teknik dan ingin memperoleh keterampilan teknis yang diperlukan untuk menjadi profesional teknik yang sukses di Jepang. Dengan kurikulum yang berfokus pada teori dan praktik, program ini akan mempersiapkan Anda untuk menghadapi tantangan di industri teknik yang cepat berkembang.",
         "special_requirements": [

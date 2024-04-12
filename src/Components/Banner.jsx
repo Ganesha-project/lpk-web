@@ -4,6 +4,7 @@ import { TfiMedall } from "react-icons/tfi";
 import { GiFallingStar } from "react-icons/gi";
 import { TbLicense } from "react-icons/tb";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Banner = () => {
     return (
@@ -20,12 +21,12 @@ export const Banner = () => {
                                 <p className="capitalize pl-5 lg:block hidden">
                                     Cek paket dan program kami sekarang!
                                 </p>
-                                <a href=""
+                                <Link href="#explore"
                                     className="flex lg:text-xl items-center gap-3 py-4 px-5 bg-red-700 rounded-full text-white w-fit hover:scale-90 duration-300 hover:bg-red-900"
                                 >
                                     Start
                                     <FaArrowRightLong />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="lg:w-[35%] border border-gray-700 lg:block hidden">

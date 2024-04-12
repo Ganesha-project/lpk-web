@@ -30,6 +30,7 @@ const program = [
 export const Program = () => {
     return (
         <>
+            <div id="explore" />
             <section className="py-20">
                 <div className="flex flex-col  lg:mx-24 mx-5 gap-5">
                     <h1 className="lg:text-6xl text-2xl pl-3 border-l-4 border-red-500 font-medium">

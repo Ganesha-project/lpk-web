@@ -9,7 +9,7 @@ import { HiMenuAlt2 } from "react-icons/hi";
 export const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const path = usePathname()
-    const specialPath = path.startsWith('/program') || path.startsWith('/about-us');
+    const specialPath = path.startsWith('/program') || path.startsWith('/about-us') || path.startsWith('/gallery');
     const faqPath = path.startsWith('/faq')
     const homePath = path.startsWith('/')
 
@@ -79,15 +79,15 @@ export const Navbar = () => {
                         </div>
                     </div>
                     <Link
-                        href={''}
-                        className="bg-[#f3eded9a] px-1 pr-3 -py-1 rounded-full flex items-center backdrop-blur-md">
+                        href={'/'}
+                        className="bg-[#d3d3d39a] px-1 pr-3 -py-1 rounded-full flex items-center backdrop-blur-md">
                         <img
                             width={50}
                             height={50}
                             className=""
                             src={'/Logo_lpk.png'}
                             alt="" />
-                        <p className="text-xl font-bold">Hidamari</p>
+                        <p className="text-xl font-bold">LPK Hidamari</p>
                     </Link>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="flex gap-5 text-base ml-5">

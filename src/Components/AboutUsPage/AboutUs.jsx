@@ -5,6 +5,7 @@ import { FaQuoteRight } from "react-icons/fa6";
 export const AboutUs = () => {
     return (
         <>
+            <div id="explore" />
             <section className="min-h-screen hidden lg:inline-block">
                 <div className="lg:p-24 p-5 flex flex-col gap-5">
                     <h1 className="text-5xl text-gray-800">

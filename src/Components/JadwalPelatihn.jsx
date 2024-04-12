@@ -15,7 +15,7 @@ const textColor = ["text-red-600", "text-blue-600", "text-green-600", "text-yell
 export const JadwalPelatihan = () => {
     return (
         <>
-            <section className="mt-20 gridBg lg:min-h-screen py-16 lg:p-0 flex flex-col justify-center">
+            <section className="mt-20 gridBg py-16 lg:p-0 flex flex-col justify-center">
                 <div className="lg:p-24 px-5 ">
                     <div className="flex flex-col justify-center gap-10">
                         <h1 className="lg:text-6xl text-3xl text-center">

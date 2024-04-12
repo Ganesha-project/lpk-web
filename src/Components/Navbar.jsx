@@ -27,7 +27,7 @@ export const Navbar = () => {
     }, []);
     return (
         <>
-            <div className={`navbar ${isScrolled ? "bg-[#00000076] backdrop-blur-lg !text-white" : "bg-transparent lg:text-gray-800"} ${specialPath ? "!text-white" : "text-gray-800"} ${faqPath ? 'text-slate-800 lg:text-slate-800' : ''} ${homePath ? "text-white lg:text-gray-900":"text-gray-900"} duration-300 ease-in-out fixed z-50`}>
+            <div className={`navbar ${isScrolled ? "bg-[#00000076] backdrop-blur-lg !text-white" : "bg-transparent lg:text-gray-800"} ${specialPath ? "!text-white" : "text-gray-800"} ${faqPath ? 'text-slate-800 lg:text-slate-800' : ''} ${homePath ? "text-white lg:text-gray-900" : "text-gray-900"} duration-300 ease-in-out fixed z-50`}>
                 <div className="navbar-start lg:pl-24">
                     <div className="dropdown">
                         <div className="drawer">
@@ -78,7 +78,17 @@ export const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                    <a className="text-xl font-bold">Hidamari</a>
+                    <Link
+                        href={''}
+                        className="bg-[#f3eded9a] px-1 pr-3 -py-1 rounded-full flex items-center backdrop-blur-md">
+                        <img
+                            width={50}
+                            height={50}
+                            className=""
+                            src={'/Logo_lpk.png'}
+                            alt="" />
+                        <p className="text-xl font-bold">Hidamari</p>
+                    </Link>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="flex gap-5 text-base ml-5">
                             <li>
@@ -122,7 +132,7 @@ export const Navbar = () => {
                 <div className="navbar-end lg:pr-24">
                     <Link
                         href={'contact-us'}
-                        className={`${path === '/contact-us' ? "bg-red-600 font-bold": "bg-slate-700 font-medium"}  hover:bg-red-800 hover:scale-95 duration-300 text-white py-2 px-5 rounded-full`}>Contact Us</Link>
+                        className={`${path === '/contact-us' ? "bg-red-600 font-bold" : "bg-[#00000077] font-medium backdrop-blur-md"}  hover:bg-red-800 hover:scale-95 duration-300 text-white py-2 px-5 rounded-full`}>Contact Us</Link>
                 </div>
             </div>
         </>

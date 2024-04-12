@@ -4,8 +4,8 @@ import { IoLogoWhatsapp } from "react-icons/io";
 export const QuestionForm = () => {
     return (
         <>
-            <section className="lg:mx-24 mx-5 py-10">
-                <h1 className="lg:text-5xl text-3xl text-center mb-5">
+            <section className="lg:mx-24 mx-5 py-10 pb-24 -mb-24">
+                <h1 className="lg:text-5xl text-3xl text-center">
                     Memiliki pertanyaan lain? isi form dibawah ini!
                 </h1>
                 <p className="text-center">

@@ -1,6 +1,7 @@
 import { Inter, Lato, Poppins } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/Components/Navbar";
+import { Footer } from "@/Components/Footer";
 
 export const metadata = {
   title: "LPK Hidamari",
@@ -15,9 +16,13 @@ const lato = Poppins({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+      <link rel="icon" type="image/png" sizes="16x16" href="icon.png" />
+      </head>
       <body className={lato.className}>
-          <Navbar />
-          {children}
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   );

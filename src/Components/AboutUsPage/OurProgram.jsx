@@ -1,3 +1,6 @@
+import Image from "next/image"
+import Link from "next/link"
+
 export const OurProgram = ({ data }) => {
     return (
         <>
@@ -10,7 +13,9 @@ export const OurProgram = ({ data }) => {
                         {data.map((el) => (
                             <div key={el.id} className="lg:w-[40lvw] lg:h-[20lvw]">
                                 <div className="relative group">
-                                    <img
+                                    <Image
+                                        width={500}
+                                        height={500}
                                         className="lg:w-[40lvw] lg:h-[20lvw] object-cover border border-gray-800"
                                         src={el.imageUrl}
                                         alt="" />
@@ -20,11 +25,11 @@ export const OurProgram = ({ data }) => {
                                         </p>
                                     </div>
                                     <div className="absolute inset-2 lg:inset-5 flex flex-col justify-end">
-                                        <a
-                                            href=""
+                                        <Link
+                                            href={'/program'}
                                             className="bg-red-500 w-fit hover:bg-red-600 font-bold backdrop-blur-md px-3 py-2 text-white text-xl opacity-0 duration-300 group-hover:opacity-100 scale-0 group-hover:scale-100">
                                             More Info
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

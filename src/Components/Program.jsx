@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link";
 
 const program = [
     {
@@ -60,12 +61,12 @@ export const Program = () => {
                             </div>
                         ))}
                     </div>
-                    <a
+                    <Link
                         className="px-4 py-2 font-bold bg-red-500 text-white border border-gray-900 text-center duration-300 ease-in-out hover:scale-95 hover:bg-red-900"
-                        href=""
+                        href={'/program'}
                     >
                         Read More
-                    </a>
+                    </Link>
                 </div>
             </section>
         </>

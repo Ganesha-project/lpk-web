@@ -2,6 +2,7 @@ import { Inter, Lato, Poppins } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/Components/Navbar";
 import { Footer } from "@/Components/Footer";
+require('dotenv').config()
 
 export const metadata = {
   title: "LPK Hidamari",

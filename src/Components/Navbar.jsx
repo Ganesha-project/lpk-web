@@ -74,20 +74,27 @@ export const Navbar = () => {
                                             FAQ
                                         </Link>
                                     </li>
+                                    <li>
+                                        <Link
+                                            className={path === '/job' ? 'text-white bg-red-600 text-center rounded-full font-bold' : ''}
+                                            href={"faq"}>
+                                            Job
+                                        </Link>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <Link
                         href={'/'}
-                        className="bg-[#d3d3d39a] px-1 pr-3 -py-1 rounded-full flex items-center backdrop-blur-md">
+                        className="bg-[#ffffffab] px-1 pr-3 -py-1 rounded-full flex items-center backdrop-blur-md">
                         <img
                             width={50}
                             height={50}
                             className=""
                             src={'/Logo_lpk.png'}
                             alt="" />
-                        <p className="text-xl font-bold">LPK Hidamari</p>
+                        <p className="hidden lg:flex font-bold">LPK Hidamari</p>
                     </Link>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="flex gap-5 text-base ml-5">
@@ -124,6 +131,13 @@ export const Navbar = () => {
                                     className={path === '/faq' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}
                                     href={"faq"}>
                                     FAQ
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    className={path === '/job' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}
+                                    href={"job"}>
+                                    Job
                                 </Link>
                             </li>
                         </ul>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { MdCall } from "react-icons/md";
 import { AnimateScroll } from "../AnimateScroll";
+import { ModalRegister } from "./ModalRegister";
 
 export const ProgramList = ({ data }) => {
     const [toggle, setToggle] = useState({ type: "requirements" });
@@ -27,13 +28,7 @@ export const ProgramList = ({ data }) => {
                                         {el.title}
                                     </h1>
                                 </div>
-                                <a
-                                    className="hidden px-4 py-2 lg:flex items-center gap-2 font-bold w-fit bg-red-500 text-white border border-gray-900 text-center duration-300 ease-in-out hover:scale-95 hover:bg-red-900"
-                                    href=""
-                                >
-                                    <MdCall size={20} />
-                                    Contact Now
-                                </a>
+                                <ModalRegister />
                             </div>
                             <div className="flex flex-col lg:flex-row gap-5">
                                 <div className="flex flex-col lg:w-[40%] gap-5">
@@ -109,13 +104,6 @@ export const ProgramList = ({ data }) => {
                                     </div>
                                 </div>
                             </div>
-                            <a
-                                className="flex px-4 py-2 lg:hidden items-center gap-2 font-bold justify-center bg-red-500 text-white border border-gray-900 text-center duration-300 ease-in-out hover:scale-95 hover:bg-red-900"
-                                href=""
-                            >
-                                <MdCall size={20} />
-                                Contact Now
-                            </a>
                         </div>
                     </AnimateScroll>
                 ))}

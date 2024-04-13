@@ -1,7 +1,7 @@
 export const Location = () => {
     return (
         <>
-            <section className="lg:mx-24 mx-5">
+            <section className="lg:mx-24 mt-10 lg:mt-0 mx-5">
                 <p className="border-l-4 pl-3 border-red-600 text-3xl mb-5">
                     Our Address
                 </p>

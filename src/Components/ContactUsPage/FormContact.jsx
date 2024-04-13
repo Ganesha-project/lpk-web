@@ -6,10 +6,10 @@ import { MdCall } from "react-icons/md"
 export const FormContact = () => {
     return (
         <>
-            <section className="lg:p-24 px-5  ">
-                <div className="border-t border-b flex">
-                    <div className="flex flex-col gap-3 w-[50%] border-r p-10">
-                        <h1 className="text-5xl font-bold">
+            <section className="lg:p-24 px-5">
+                <div className="lg:border-t lg:border-b flex flex-col lg:flex-row pt-16 lg:pt-0">
+                    <div className="flex flex-col gap-3 lg:w-[50%] lg:border-r lg:p-10">
+                        <h1 className="text-2xl lg:text-5xl font-bold">
                             Contact us
                         </h1>
                         <p className="text-gray-500">
@@ -17,13 +17,13 @@ export const FormContact = () => {
                         </p>
                         <Link
                             href={''}
-                            className="hover:bg-red-500 hover:text-white duration-300 flex gap-2 items-center border text-red-500 border-red-500 py-2 px-3 w-[25lvw] ">
+                            className="hover:bg-red-500 hover:text-white duration-300 flex gap-2 items-center border text-red-500 border-red-500 py-2 px-3 lg:w-[25lvw] ">
                             <MdCall size={20} />
                             02189090212
                         </Link>
                         <Link
                             href={''}
-                            className="hover:bg-white hover:text-red-500 duration-300 flex gap-2 items-center border border-red-500 bg-red-500 text-white py-2 px-3 w-[25lvw] ">
+                            className="hover:bg-white hover:text-red-500 duration-300 flex gap-2 items-center border border-red-500 bg-red-500 text-white py-2 px-3 lg:w-[25lvw] ">
                             <IoMdMail size={20} />
                             hidamarikenshusenta@gmail.com
                         </Link>
@@ -45,7 +45,7 @@ export const FormContact = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-5 p-10 w-[50%]">
+                    <div className="flex flex-col gap-5 mt-10 lg:mt-0 lg:p-10 lg:w-[50%]">
                         <form
                             action=""
                             className="flex flex-col gap-5 ">

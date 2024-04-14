@@ -2,6 +2,7 @@ import { Inter, Lato, Poppins } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/Components/Navbar";
 import { Footer } from "@/Components/Footer";
+import Script from "next/script";
 require('dotenv').config()
 
 export const metadata = {
@@ -24,6 +25,18 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        <Script src="script.js" />
+        <Script id="google-translate-script" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" />
+        <Script id="google-translate-initializer">
+          {`
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+              );
+            }
+          `}
+        </Script>
       </body>
     </html>
   );

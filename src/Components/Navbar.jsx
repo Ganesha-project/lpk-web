@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { HiMenuAlt2 } from "react-icons/hi";
+import { FaLanguage } from "react-icons/fa6";
+import { HiMenuAlt2, HiMenuAlt3 } from "react-icons/hi";
 
 
 export const Navbar = () => {
@@ -81,6 +82,13 @@ export const Navbar = () => {
                                             Job
                                         </Link>
                                     </li>
+                                    <li>
+                                        <Link
+                                            className={path === '/contact-us' ? 'text-white bg-red-600 text-center rounded-full font-bold' : ''}
+                                            href={"contact-us"}>
+                                            Contact Us
+                                        </Link>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -94,7 +102,7 @@ export const Navbar = () => {
                             className=""
                             src={'/Logo_lpk.png'}
                             alt="" />
-                        <p className="hidden lg:flex font-bold">LPK Hidamari</p>
+                        {/* <p className="hidden lg:flex font-bold">LPK Hidamari</p> */}
                     </Link>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="flex gap-5 text-base ml-5">
@@ -140,14 +148,37 @@ export const Navbar = () => {
                                     Job
                                 </Link>
                             </li>
+                            <li>
+                                <Link
+                                    className={path === '/contact-us' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}
+                                    href={"contact-us"}>
+                                    Contact Us
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div className="navbar-end lg:pr-24">
-                    <Link
+                    {/* <Link
                         href={'contact-us'}
-                        className={`${path === '/contact-us' ? "bg-red-600 font-bold" : "bg-[#00000077] font-medium backdrop-blur-md"}  hover:bg-red-800 hover:scale-95 duration-300 text-white py-2 px-5 rounded-full`}>Contact Us</Link>
+                        className={`${path === '/contact-us' ? "bg-red-600 font-bold" : "bg-[#00000077] font-medium backdrop-blur-md"}  hover:bg-red-800 hover:scale-95 duration-300 text-white py-2 px-5 rounded-full`}>Contact Us
+                    </Link> */}
+                    {/* Open the modal using document.getElementById('ID').showModal() method */}
+                    <button className="hover:bg-red-800 hover:scale-95 duration-300 text-white py-2 px-5 rounded-full bg-red-600 font-bold flex items-center gap-2" onClick={() => document.getElementById('my_modal_2').showModal()}>
+                        <FaLanguage size={25}/>
+                        Language
+                    </button>
+                    <dialog id="my_modal_2" className="modal !rounded-none border border-gray-800">
+                        <div className="modal-box !rounded-none border border-red-800">
+                            <div id="google_translate_element"></div>
+                        </div>
+                        <form method="dialog" className="modal-backdrop">
+                            <button>close</button>
+                        </form>
+                    </dialog>
+
                 </div>
+
             </div>
         </>
     )

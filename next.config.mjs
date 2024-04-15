@@ -31,6 +31,7 @@ const nextConfig = {
         chunks: "all",
       },
     };
+    return config
   }
 };
 

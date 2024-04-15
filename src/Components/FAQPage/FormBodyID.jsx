@@ -15,16 +15,14 @@ export const FormBodyID = () => {
             <div className="flex flex-col gap-5 mt-10">
                 <FormID />
                 <Link
-                    href=""
+                    href={WALINK}
                     className="bg-green-300 hover:bg-green-400 duration-300 flex-grow p-5 flex justify-center items-center flex-row gap-2 font-medium">
                     <p className="text-xl capitalize text-center">
                         Atau hubungi kami melalui WhatsApp
                     </p>
-                    <Link
-                        href={WALINK}
-                        className="text-gray-800">
+                    <div className="text-gray-800">
                         <IoLogoWhatsapp size={25} />
-                    </Link>
+                    </div>
                 </Link>
             </div>
         </>

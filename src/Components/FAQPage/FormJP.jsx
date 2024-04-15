@@ -2,9 +2,9 @@ export const FormJP = () => {
     return (
         <>
             <form
-                action={`https://formsubmit.co/b93dca27f4e83a4300f3cf5c81bde495`}
-                className="flex flex-col gap-5"
+                action={`https://formsubmit.co/${process.env.EMAIL}`}
                 method="POST"
+                className="flex flex-col gap-5"
             >
                 <label className="input shadow-2xl rounded-none border-none flex items-center gap-2">
                     名前•

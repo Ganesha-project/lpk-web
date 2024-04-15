@@ -15,7 +15,7 @@ export const FormJob = () => {
                             お話ましょう！
                         </h1>
                         <form
-                            action={`https://formsubmit.co/b93dca27f4e83a4300f3cf5c81bde495`}
+                            action={`https://formsubmit.co/${process.env.EMAIL}`}
                             className="flex flex-col gap-5 w-full"
                             method="POST"
                         >

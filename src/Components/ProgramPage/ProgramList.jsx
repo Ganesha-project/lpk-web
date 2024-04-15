@@ -1,11 +1,14 @@
 'use client'
 import Image from "next/image";
 import { useState } from "react";
-import { MdCall } from "react-icons/md";
+import { MdCall, MdStar } from "react-icons/md";
 import { AnimateScroll } from "../AnimateScroll";
 import { ModalRegister } from "./ModalRegister";
 
 export const ProgramList = ({ data }) => {
+    console.log('====================================');
+    console.log();
+    console.log('====================================');
     const [toggle, setToggle] = useState({ type: "requirements" });
 
     function updateToggle(type) {
@@ -35,7 +38,7 @@ export const ProgramList = ({ data }) => {
                                     <Image
                                         width={500}
                                         height={500}
-                                        className="border border-gray-800 w-full object-cover lg:h-[15lvw]"
+                                        className="border object-top border-gray-800 w-full object-cover lg:h-[15lvw]"
                                         src={el.imageUrl}
                                         alt=""
                                     />
@@ -48,14 +51,19 @@ export const ProgramList = ({ data }) => {
                                         <div className="flex gap-5">
                                             <button
                                                 onClick={() => updateToggle('requirements')}
-                                                className={`${toggle.type === 'requirements' ? "bg-violet-600 animate-pulse" : ""} border border-gray-900 text-lg lg:text-base lg:py-4 py-2 px-2 lg:px-8 w-full font-semibold duration-300 hover:scale-95 text-white bg-red-800`}>
-                                                Persyaratan Umum
+                                                className={`${toggle.type === 'requirements' ? "bg-violet-600 animate-pulse" : ""} border border-gray-900 text-lg lg:text-base lg:py-4 py-2 px-2 lg:px-8 w-full font-semibold duration-300 hover:scale-95 text-white bg-red-800`}
+                                            >
+                                                Persyaratan
                                             </button>
-                                            <button
-                                                onClick={() => updateToggle('administrasi')}
-                                                className={`${toggle.type === 'administrasi' ? "bg-rose-600 animate-pulse" : ""} border border-gray-900 text-lg lg:text-base lg:py-4 py-2 px-2 lg:px-8 w-full font-semibold duration-300 hover:scale-95 text-white bg-red-800`}>
-                                                Persyaratan Administrasi
-                                            </button>
+                                            {data[1] && index !== 1 && // Periksa apakah data[1] ada dan index saat ini adalah 1
+                                                <button
+                                                    onClick={() => updateToggle('administrasi')}
+                                                    className={`${toggle.type === 'administrasi' ? "bg-rose-600 animate-pulse" : ""} border border-gray-900 text-lg lg:text-base lg:py-4 py-2 px-2 lg:px-8 w-full font-semibold duration-300 hover:scale-95 text-white bg-red-800`}
+                                                >
+                                                    Persyaratan Administrasi
+                                                </button>
+                                            }
+
                                         </div>
                                         <div className={`${toggle.type !== 'requirements' ? "hidden scale-50" : "scale-100 inline"} overflow-y-auto flex-grow h-[41lvh]`}>
                                             <div className="p-5 border border-gray-900 bg-red-200">
@@ -71,7 +79,7 @@ export const ProgramList = ({ data }) => {
                                                     <tbody>
                                                         {el.special_requirements?.map((requirement, index) => (
                                                             <tr key={index}>
-                                                                <th>{index + 3}.</th>
+                                                                <th>{<MdStar />}</th>
                                                                 <th>{requirement}</th>
                                                             </tr>
                                                         ))}

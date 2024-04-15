@@ -1,17 +1,9 @@
-// 'use client'
-// import { useState } from "react";
-
 export const RegisterForm = () => {
-    // const [selectedOption, setSelectedOption] = useState("");
-
-    // const handleOptionChange = (event) => {
-    //     setSelectedOption(event.target.value);
-    // };
     return (
         <>
             <form
-                action={`https://formsubmit.co/b93dca27f4e83a4300f3cf5c81bde495`}
-                method="POST"
+                action={`https://formsubmit.co/${process.env.EMAIL}`}
+                method={'POST'}
                 className="flex flex-col gap-5 mt-5"
                 enctype="multipart/form-data"
             >
@@ -48,7 +40,7 @@ export const RegisterForm = () => {
                     </div>
                     <div className="form-control w-fit">
                         <label className="label cursor-pointer">
-                            <input type="radio" name="gender" value={'P'} className="radio checked:bg-red-500 border-red-600 border"  />
+                            <input type="radio" name="gender" value={'P'} className="radio checked:bg-red-500 border-red-600 border" />
                             <span className="label-text ml-2">Perempuan</span>
                         </label>
                     </div>
@@ -213,10 +205,11 @@ export const RegisterForm = () => {
                 <label htmlFor="" className="-mb-2">Program:</label>
                 <select name="program" className="select select-bordered w-full rounded-none border-red-500">
                     <option disabled selected>Pilih program</option>
-                    <option value={'Bekerja Sambil Kuliah'}>Bekerja Sambil Kuliah</option>
+                    <option value={'Program Caregiver (Perawat Lansia)'}>Program Caregiver (Perawat)</option>
+                    <option value={'Program Pekerja Berketrampilan Khusus (SSW)'}>Program Pekerja Berketrampilan Khusus (SSW)</option>
                     <option value={'Magang di Jepang'}>Magang di Jepang</option>
-                    <option value={'Program Caregiver (Perawat)'}>Program Caregiver (Perawat)</option>
                     <option value={'Program Engineering'}>Program Engineering</option>
+                    <option value={'Bekerja Sambil Kuliah'}>Bekerja Sambil Kuliah</option>
                 </select>
 
                 <p className="-mb-3">

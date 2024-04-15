@@ -3,6 +3,10 @@ import "./globals.css";
 import { Navbar } from "@/Components/Navbar";
 import { Footer } from "@/Components/Footer";
 import Script from "next/script";
+import { FloatingButton } from "@/Components/FloatingBtn";
+import { FloatingButtonCOntainer, FloatingButtonContainer } from "@/Components/FloatingBtnContainer";
+import { RiWhatsappFill } from "react-icons/ri";
+import { Buttons } from "@/Components/Reusable/Buttons";
 require('dotenv').config()
 
 export const metadata = {
@@ -19,10 +23,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-      <link rel="icon" type="image/png" sizes="16x16" href="icon.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="icon.png" />
       </head>
       <body className={lato.className}>
         <Navbar />
+        {/* <FloatingButton /> */}
+        <FloatingButtonContainer>
+          <Buttons />
+        </FloatingButtonContainer>
         {children}
         <Footer />
         <Script src="script.js" />
@@ -31,7 +39,7 @@ export default function RootLayout({ children }) {
           {`
             function googleTranslateElementInit() {
               new google.translate.TranslateElement(
-                { pageLanguage: 'en' },
+                { pageLanguage: 'id' },
                 'google_translate_element'
               );
             }

@@ -11,7 +11,7 @@ export const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const path = usePathname()
     const specialPath = path.startsWith('/program') || path.startsWith('/about-us') || path.startsWith('/gallery');
-    const noBannerPath = path.startsWith('/faq') || path.startsWith('/job') || path.startsWith('/contact-us')
+    const noBannerPath = path.startsWith('/faq') || path.startsWith('/job') || path.startsWith('/contact-us') || path.startsWith('/registrasi')
     const homePath = path.startsWith('/')
 
     useEffect(() => {
@@ -28,7 +28,7 @@ export const Navbar = () => {
     }, []);
     return (
         <>
-            <div className={`navbar ${isScrolled ? "bg-[#00000076] backdrop-blur-lg !text-white" : "bg-transparent lg:text-gray-800"} ${specialPath ? "!text-white" : "text-gray-800"} ${noBannerPath ? 'text-black lg:text-slate-800' : ''} ${homePath ? "text-white lg:text-gray-900" : "text-gray-900"} duration-300 ease-in-out fixed z-50`}>
+            <div className={`navbar ${isScrolled ? "bg-[#00000076] backdrop-blur-lg !text-white" : "bg-transparent lg:text-gray-800"} ${specialPath ? "!text-white" : "text-gray-800"} ${noBannerPath ? 'text-slate-900' : ''} ${homePath ? "text-white lg:text-gray-900" : "text-gray-900"} duration-300 ease-in-out fixed z-50`}>
                 <div className="navbar-start lg:pl-24">
                     <div className="dropdown">
                         <div className="drawer">
@@ -87,6 +87,13 @@ export const Navbar = () => {
                                             className={path === '/contact-us' ? 'text-white bg-red-600 text-center rounded-full font-bold' : ''}
                                             href={"contact-us"}>
                                             Contact Us
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            className={path === '/registrasi' ? 'text-white bg-red-600 text-center rounded-full font-bold' : ''}
+                                            href={"registrasi"}>
+                                            Register
                                         </Link>
                                     </li>
                                 </ul>

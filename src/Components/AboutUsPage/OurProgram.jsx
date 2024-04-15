@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { FaQuoteRight } from "react-icons/fa6"
 
 export const OurProgram = ({ data }) => {
     return (
@@ -34,6 +35,18 @@ export const OurProgram = ({ data }) => {
                                 </div>
                             </div>
                         ))}
+                        <div className="lg:w-[40lvw] bg-slate-900 text-white lg:flex lg:flex-col gap-5 p-5 hidden border border-gray-800">
+                            <FaQuoteRight size={25} className="text-white" />
+                            <p className="text-xl drop-shadow-md">
+                                Temukan peluang tak terbatas untuk meraih impianmu di Jepang dengan beragam program unggulan LPK. Mulai dari perawatan lansia hingga karier teknologi, setiap langkahmu menuju sukses dimulai di sini.
+                            </p>
+                            <Link
+                                className="px-4 py-2 w-fit font-bold bg-red-500 text-white border border-gray-900 text-center duration-300 ease-in-out hover:scale-95 hover:bg-red-900"
+                                href={'/program'}
+                            >
+                                Cek Semua Program
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>

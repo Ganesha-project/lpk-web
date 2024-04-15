@@ -32,7 +32,7 @@ export const BannerMobile = () => {
                         </div>
                     </div>
                     <div className="flex">
-                        <div className="w-[50%] flex-grow h-full border-r border-b border-l border-gray-700 p-4 lg:p-12 bg-gray-900 text-white h-fit lg:w-full">
+                        <div className="w-[50%] flex-grow h-full border-r border-b border-l border-gray-700 p-4 lg:p-12 bg-gray-900 text-white lg:w-full">
                             <div className="flex justify-between items-center">
                                 <TbLicense size={30} />
                                 <p className="capitalize text-lg font-medium">
@@ -43,7 +43,7 @@ export const BannerMobile = () => {
                             Dengan Lisensi SO yang kami miliki, Kamu dapat percayakan kualitas program pelatihan kamu ke LPK Hidamari Kenshu Senta!
                             </p>
                         </div>
-                        <div className="w-[50%] flex-grow h-full border-r border-b border-l border-gray-700 p-4 lg:p-12 bg-red-400 text-white h-fit lg:w-full">
+                        <div className="w-[50%] flex-grow h-full border-r border-b border-l border-gray-700 p-4 lg:p-12 bg-red-400 text-white lg:w-full">
                             <div className="flex justify-between items-center">
                                 <TfiMedall size={30} />
                                 <p className="capitalize text-lg font-medium">

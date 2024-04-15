@@ -47,21 +47,22 @@ export const FormContact = () => {
                     </div>
                     <div className="flex flex-col gap-5 mt-10 lg:mt-0 lg:p-10 lg:w-[50%]">
                         <form
-                            action=""
+                            action={`https://formsubmit.co/${process.env.EMAIL}`}
+                            method="POST"
                             className="flex flex-col gap-5 ">
                             <label className="input rounded-none input-bordered border-red-500 flex items-center gap-2">
                                 Email
-                                <input type="text" className="grow" placeholder="" />
+                                <input name="email" type="text" className="grow" placeholder="" />
                             </label>
                             <label className="input rounded-none input-bordered border-red-500 flex items-center gap-2">
                                 Phone
-                                <input type="text" className="grow" placeholder="" />
+                                <input name="phone" type="text" className="grow" placeholder="" />
                             </label>
                             <label className="input rounded-none input-bordered border-red-500 flex items-center gap-2">
                                 Name
-                                <input type="text" className="grow" placeholder="" />
+                                <input name="name" type="text" className="grow" placeholder="" />
                             </label>
-                            <textarea id="" className="textarea rounded-none input-bordered border-red-500 placeholder-slate-800" placeholder="Pesan"></textarea>
+                            <textarea name="pesan" className="textarea rounded-none input-bordered border-red-500 placeholder-slate-800" placeholder="Pesan"></textarea>
                             <button className="btn bg-red-500 text-white rounded-none hover:bg-red-600">
                                 Send
                             </button>

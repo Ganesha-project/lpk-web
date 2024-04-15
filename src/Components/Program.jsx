@@ -6,31 +6,31 @@ const program = [
     {
         type: "Program Caregiver (Perawat Lansia)",
         desc: "Kamu bekerja di bidang Medis/Keperawatan dan ingin bekerja di Jepang?\nProgram Caregiver cocok banget buat kamu!",
-        imgUrl: "https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?q=80&w=2883&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        imgUrl: "https://res.cloudinary.com/dzrh2ogbn/image/upload/v1713177627/LPK%20Asset/szmla8leyxqgn0cm8cfy.webp",
         slug: "program-caregiver"
     },
     {
         type: "Program Pekerja Berketrampilan Khusus (SSW)",
         desc: "Buat kamu yang mau bekerja di berbagai macam industri khusus di Jepang, Program ini cocok banget buat kamu!",
         imgUrl: "https://res.cloudinary.com/dzrh2ogbn/image/upload/v1713174086/LPK%20Asset/vpa39jf2olt2sfu9bl8k.webp",
-        slug: "program-caregiver"
+        slug: "program-ssw"
     },
     {
         type: "Magang di Jepang",
         desc: "Program Magang buat kamu yang baru pertama kali ingin bekerja di Jepang!",
-        imgUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        imgUrl: "https://res.cloudinary.com/dzrh2ogbn/image/upload/v1713177831/LPK%20Asset/aojwrm78zs1pi6m3tisg.webp",
         slug: "magang-di-jepang"
     },
     {
         type: "Program Engineering",
         desc: "Kamu mau bekerja di Jepang sebagai Teknisi/Engineering?\nPake program ini aja!",
-        imgUrl: "https://images.unsplash.com/photo-1581094480465-4e6c25fb4a52?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        imgUrl: "https://res.cloudinary.com/dzrh2ogbn/image/upload/v1712390758/LPK%20Asset/snulsni8dbugiwwstixt.webp",
         slug: "program-engineering"
     },
     {
         type: "Bekerja Sambil Kuliah",
         desc: "Mau bekerja sambil kuliah di Jepang?\nProgram ini cocok banget buat kamu!",
-        imgUrl: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        imgUrl: "https://res.cloudinary.com/dzrh2ogbn/image/upload/v1712390757/LPK%20Asset/gstcyd8kdm9tl8rqpqk8.webp",
         slug: "bekerja-sambil-kuliah"
     }
 ];

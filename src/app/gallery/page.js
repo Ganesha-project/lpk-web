@@ -1,4 +1,5 @@
 'use client'
+import { AnimateScroll } from "@/Components/AnimateScroll";
 import { Image } from "@/Components/GalleryPage/Image";
 import { BannerR } from "@/Components/Reusable/BannerR";
 
@@ -10,7 +11,9 @@ export default function Gallery() {
   return (
     <>
       <BannerR imageBackground={imageBackground} title={title} descriptions={descriptions} button={'hidden'} />
-      <Image />
+      <AnimateScroll animation={'animate__fadeInUp'}>
+        <Image />
+      </AnimateScroll>
     </>
   );
 }

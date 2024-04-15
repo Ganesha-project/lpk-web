@@ -1,7 +1,5 @@
 'use client'
 import Image from "next/image"
-import { IoLogoWhatsapp } from "react-icons/io";
-import { FormID } from "./FormID";
 import { useState } from "react";
 import { FormBodyID } from "./FormBodyID";
 import { FormBodyJP } from "./FormBodyJP";

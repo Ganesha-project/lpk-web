@@ -115,15 +115,27 @@ export const RegisterForm = () => {
                 <p className="-mb-3">
                     Riwayat ke Luar Negri :
                 </p>
-                <label className="input rounded-none input-bordered border-red-500 flex items-center gap-2">
-                    <div className="flex lg:flex-row flex-col gap-3 lg:items-center">
-                        <div className="form-control w-fit">
+                <div className="inline-block lg:hidden form-control w-fit">
                             <label className="label cursor-pointer">
                                 <input type="radio" name="Gender" value={'Belum Pernah'} className="radio checked:bg-red-500 border-red-600 border" />
                                 <span className="label-text ml-2">Belum Pernah</span>
                             </label>
                         </div>
-                        <div className="form-control w-fit">
+                        <div className="inline-block lg:hidden form-control w-fit">
+                            <label className="label cursor-pointer">
+                                <input type="radio" name="Gender" value={'Pernah'} className="radio checked:bg-red-500 border-red-600 border" />
+                                <span className="label-text ml-2">Pernah</span>
+                            </label>
+                        </div>
+                <label className="input rounded-none input-bordered border-red-500 flex items-center gap-2">
+                    <div className="flex lg:flex-row flex-col gap-3 lg:items-center">
+                        <div className="hidden lg:inline-block form-control w-fit">
+                            <label className="label cursor-pointer">
+                                <input type="radio" name="Gender" value={'Belum Pernah'} className="radio checked:bg-red-500 border-red-600 border" />
+                                <span className="label-text ml-2">Belum Pernah</span>
+                            </label>
+                        </div>
+                        <div className="hidden lg:inline-block form-control w-fit">
                             <label className="label cursor-pointer">
                                 <input type="radio" name="Gender" value={'Pernah'} className="radio checked:bg-red-500 border-red-600 border" />
                                 <span className="label-text ml-2">Pernah</span>
@@ -163,7 +175,7 @@ export const RegisterForm = () => {
                     </div>
                     <div className="flex lg:flex-row flex-col gap-3 lg:items-center">
                         <div className="form-control w-full">
-                            <div className="flex justify-center">
+                            <div className="flex items-center">
                                 <label className="label cursor-pointer">
                                     <input type="radio" name="lulusan" value="lulusan_lainnya" className="radio checked:bg-red-500 border-red-600 border" />
                                 </label>

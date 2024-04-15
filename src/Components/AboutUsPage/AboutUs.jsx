@@ -30,7 +30,7 @@ export const AboutUs = () => {
                     <FaQuoteRight className="self-end text-red-500 -mt-2" size={40} />
                     <div className="w-[60%] -mt-5 text-justify self-end px-10 font-medium text-gray-800">
                         <p>
-                            Di LPK Hidamari Kenshu Senta, kami memahami pentingnya <strong>integrasi budaya</strong>, <strong>keterampilan teknis</strong>, dan <strong>kesiapan profesional</strong> dalam mencapai tujuan karir di Jepang. Oleh karena itu, kami menyediakan <strong>program pelatihan yang komprehensif dan terarah</strong> yang dirancang khusus untuk mempersiapkan Anda dengan keterampilan dan pengetahuan yang diperlukan dalam berbagai bidang industry di Jepang. Kami memiliki <strong>program pelatihan yang dapat disesuaikan</strong> dengan kebutuhan Anda. Mari bergabung dengan kami dan mulailah perjalanan menuju <strong>kesuksesan karir Anda di Jepang</strong> bersama LPK Hidamari Kenshu Senta!
+                            Di LPK Hidamari Kenshu Senta, kami memahami pentingnya <strong>integrasi budaya</strong>, <strong>keterampilan teknis</strong>, dan <strong>kesiapan profesional</strong> dalam mencapai tujuan karir di Jepang. Oleh karena itu, kami menyediakan <strong>program pelatihan yang komprehensif dan terarah</strong> yang dirancang khusus untuk mempersiapkan Anda dengan keterampilan dan pengetahuan yang diperlukan dalam berbagai bidang industri di Jepang. Kami memiliki <strong>program pelatihan yang dapat disesuaikan</strong> dengan kebutuhan Anda. Mari bergabung dengan kami dan mulailah perjalanan menuju <strong>kesuksesan karir Anda di Jepang</strong> bersama LPK Hidamari Kenshu Senta!
                         </p>
                     </div>
                 </div>

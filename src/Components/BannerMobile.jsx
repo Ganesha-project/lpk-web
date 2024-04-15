@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { FaArrowRightLong } from "react-icons/fa6"
+import { TbLicense } from "react-icons/tb"
 import { TfiMedall } from "react-icons/tfi"
 
 export const BannerMobile = () => {
@@ -23,34 +24,34 @@ export const BannerMobile = () => {
                                 Magang ke <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-400 font-bold">Jepang</span> dan Rajut Masa Depan Terbaikmu!
                             </p>
                             <a href=""
-                                    className="flex lg:text-xl my-3 items-center gap-3 py-2 px-4 bg-[#ffffff5f] backdrop-blur-lg rounded-full text-white w-fit hover:scale-90 duration-300 hover:bg-red-500"
-                                >
-                                    Start
-                                    <FaArrowRightLong />
-                                </a>
+                                className="flex lg:text-xl my-3 items-center gap-3 py-2 px-4 bg-[#ffffff5f] backdrop-blur-lg rounded-full text-white w-fit hover:scale-90 duration-300 hover:bg-red-500"
+                            >
+                                Start
+                                <FaArrowRightLong />
+                            </a>
                         </div>
                     </div>
                     <div className="flex">
-                        <div className="w-[50%] border-r border-b border-l border-gray-700 p-4 lg:p-12 bg-gray-900 text-white h-fit lg:w-full">
+                        <div className="w-[50%] flex-grow h-full border-r border-b border-l border-gray-700 p-4 lg:p-12 bg-gray-900 text-white h-fit lg:w-full">
                             <div className="flex justify-between items-center">
-                                <TfiMedall size={30} />
+                                <TbLicense size={30} />
                                 <p className="capitalize text-lg font-medium">
-                                    Best on its class
+                                    Berlisensi SO
                                 </p>
                             </div>
                             <p className="mt-5 text-xs font-light">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, omnis esse autem id commodi.
+                            Dengan Lisensi SO yang kami miliki, Kamu dapat percayakan kualitas program pelatihan kamu ke LPK Hidamari Kenshu Senta!
                             </p>
                         </div>
-                        <div className="w-[50%] border-r border-b border-l border-gray-700 p-4 lg:p-12 bg-red-400 text-white h-fit lg:w-full">
+                        <div className="w-[50%] flex-grow h-full border-r border-b border-l border-gray-700 p-4 lg:p-12 bg-red-400 text-white h-fit lg:w-full">
                             <div className="flex justify-between items-center">
                                 <TfiMedall size={30} />
                                 <p className="capitalize text-lg font-medium">
-                                    Best on its class
+                                Terakreditasi
                                 </p>
                             </div>
                             <p className="mt-5 text-xs font-light">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, omnis esse autem id commodi.
+                            Kami bangga menjadi Lembaga yang terakreditasi, menandakan komitmen kami dalam menyediakan pendidikan berkualitas tinggi yang memenuhi standar yang ketat.
                             </p>
                         </div>
                     </div>

@@ -6,9 +6,6 @@ import { AnimateScroll } from "../AnimateScroll";
 import { ModalRegister } from "./ModalRegister";
 
 export const ProgramList = ({ data }) => {
-    console.log('====================================');
-    console.log();
-    console.log('====================================');
     const [toggle, setToggle] = useState({ type: "requirements" });
 
     function updateToggle(type) {

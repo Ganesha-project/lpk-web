@@ -23,7 +23,7 @@ export const BannerMobile = () => {
                             <p>
                                 Magang ke <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-400 font-bold">Jepang</span> dan Rajut Masa Depan Terbaikmu!
                             </p>
-                            <a href=""
+                            <a href="#explore"
                                 className="flex lg:text-xl my-3 items-center gap-3 py-2 px-4 bg-[#ffffff5f] backdrop-blur-lg rounded-full text-white w-fit hover:scale-90 duration-300 hover:bg-red-500"
                             >
                                 Start

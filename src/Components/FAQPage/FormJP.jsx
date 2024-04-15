@@ -1,8 +1,10 @@
+import { MAIL } from "../../../MAIL"
+
 export const FormJP = () => {
     return (
         <>
             <form
-                action={`https://formsubmit.co/${process.env.EMAIL}`}
+                action={`https://formsubmit.co/${MAIL}`}
                 method="POST"
                 className="flex flex-col gap-5"
             >

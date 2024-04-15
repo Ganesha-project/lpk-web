@@ -1,3 +1,5 @@
+import { MAIL } from "../../../MAIL"
+
 export const FormJob = () => {
     return (
         <>
@@ -15,7 +17,7 @@ export const FormJob = () => {
                             お話ましょう！
                         </h1>
                         <form
-                            action={`https://formsubmit.co/${process.env.EMAIL}`}
+                            action={`https://formsubmit.co/${MAIL}`}
                             className="flex flex-col gap-5 w-full"
                             method="POST"
                         >

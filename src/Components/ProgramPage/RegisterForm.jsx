@@ -1,8 +1,10 @@
+import { MAIL } from "../../../MAIL"
+
 export const RegisterForm = () => {
     return (
         <>
             <form
-                action={`https://formsubmit.co/${process.env.EMAIL}`}
+                action={`https://formsubmit.co/${MAIL}`}
                 method={'POST'}
                 className="flex flex-col gap-5 mt-5"
                 enctype="multipart/form-data"

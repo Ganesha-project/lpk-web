@@ -2,6 +2,7 @@ import Link from "next/link"
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6"
 import { IoLogoWhatsapp, IoMdMail } from "react-icons/io"
 import { MdCall } from "react-icons/md"
+import { MAIL } from "../../../MAIL"
 
 export const FormContact = () => {
     return (
@@ -47,7 +48,7 @@ export const FormContact = () => {
                     </div>
                     <div className="flex flex-col gap-5 mt-10 lg:mt-0 lg:p-10 lg:w-[50%]">
                         <form
-                            action={`https://formsubmit.co/${process.env.EMAIL}`}
+                            action={`https://formsubmit.co/${MAIL}`}
                             method="POST"
                             className="flex flex-col gap-5 ">
                             <label className="input rounded-none input-bordered border-red-500 flex items-center gap-2">

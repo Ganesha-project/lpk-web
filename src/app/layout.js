@@ -1,13 +1,10 @@
-import { Inter, Lato, Poppins } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
+import { Poppins } from "next/font/google";
 import { Navbar } from "@/Components/Navbar";
 import { Footer } from "@/Components/Footer";
-import Script from "next/script";
-import { FloatingButton } from "@/Components/FloatingBtn";
-import { FloatingButtonCOntainer, FloatingButtonContainer } from "@/Components/FloatingBtnContainer";
-import { RiWhatsappFill } from "react-icons/ri";
+import { FloatingButtonContainer } from "@/Components/FloatingBtnContainer";
 import { Buttons } from "@/Components/Reusable/Buttons";
-require('dotenv').config()
 
 export const metadata = {
   title: "LPK Hidamari",
@@ -27,7 +24,6 @@ export default function RootLayout({ children }) {
       </head>
       <body className={lato.className}>
         <Navbar />
-        {/* <FloatingButton /> */}
         <FloatingButtonContainer>
           <Buttons />
         </FloatingButtonContainer>

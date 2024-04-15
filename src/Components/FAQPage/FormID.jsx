@@ -1,8 +1,10 @@
+import { MAIL } from "../../../MAIL"
+
 export const FormID = () => {
     return (
         <>
             <form
-                action={`https://formsubmit.co/${process.env.EMAIL}`}
+                action={`https://formsubmit.co/${MAIL}`}
                 className="flex flex-col gap-5"
                 method="POST"
             >

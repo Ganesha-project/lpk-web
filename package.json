@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
-    "dotenv": "^16.4.5",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18",
@@ -20,7 +19,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
-    "daisyui": "^4.9.0",
+    "daisyui": "^4.10.1",
     "postcss": "^8",
     "tailwindcss": "^3.3.0"
   }

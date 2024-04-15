@@ -29,7 +29,9 @@ export default function RootLayout({ children }) {
         </FloatingButtonContainer>
         {children}
         <Footer />
-        {/* <Script src="script.js" />
+        <Script src="https://cdn.tailwindcss.com"></Script>
+        <Script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></Script>
+        <Script src="script.js" />
         <Script id="google-translate-script" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" />
         <Script id="google-translate-initializer">
           {`
@@ -40,7 +42,7 @@ export default function RootLayout({ children }) {
               );
             }
           `}
-        </Script> */}
+        </Script>
       </body>
     </html>
   );

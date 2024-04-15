@@ -177,7 +177,7 @@ export const Navbar = () => {
                     </button>
                     <dialog id="my_modal_2" className="modal !rounded-none border border-gray-800">
                         <div className="modal-box !rounded-none border border-red-800">
-                            <div id="google_translate_element"></div>
+                            {/* <div id="google_translate_element"></div> */}
                         </div>
                         <form method="dialog" className="modal-backdrop">
                             <button>close</button>

@@ -23,6 +23,14 @@ const nextConfig = {
         hostname: 'res.cloudinary.com'
       },
     ]
+  },
+  webpack: (config) => {
+    config.optimization.splitChunks.cacheGroups = {
+      common: {
+        name: "common",
+        chunks: "all",
+      },
+    };
   }
 };
 

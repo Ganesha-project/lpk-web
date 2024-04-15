@@ -34,12 +34,23 @@ export const Navbar = () => {
                         <div className="drawer">
                             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
                             <div tabIndex={0} role="button" className="drawer-content btn btn-ghost btn-circle lg:hidden">
-                                <label htmlFor="my-drawer" className="drawer-button"><HiMenuAlt2 size={25} className={`${noBannerPath && isScrolled ? 'text-white' : 'text-slate-900'} ${specialPath && homePath ? "!text-white" : ""}`} /></label>
+                                <label htmlFor="my-drawer" className="drawer-button"><HiMenuAlt2 size={25} className={`${noBannerPath && isScrolled ? 'text-white' : 'text-slate-900'} ${specialPath ? "text-white" : ""} ${homePath ? 'lg:text-gray-800 text-white': ''}`} /></label>
                             </div>
                             <div className="drawer-side z-[60]">
                                 <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
                                 <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
                                     {/* Sidebar mobile content here */}
+                                    <Link
+                                        href={'/'}
+                                        className="">
+                                        <img
+                                            width={120}
+                                            height={120}
+                                            className=""
+                                            src={'/Logo_lpk.png'}
+                                            alt="" />
+                                        {/* <p className="hidden lg:flex font-bold">LPK Hidamari</p> */}
+                                    </Link>
                                     <li>
                                         <Link
                                             className={path === '/' ? 'text-red-600 font-bold' : ''}
@@ -172,7 +183,7 @@ export const Navbar = () => {
                     </Link> */}
                     {/* Open the modal using document.getElementById('ID').showModal() method */}
                     <button className="hover:bg-red-800 hover:scale-95 duration-300 text-white py-2 px-5 rounded-full bg-red-600 font-bold flex items-center gap-2" onClick={() => document.getElementById('my_modal_2').showModal()}>
-                        <FaLanguage size={25}/>
+                        <FaLanguage size={25} />
                         Language
                     </button>
                     <dialog id="my_modal_2" className="modal !rounded-none border border-gray-800">

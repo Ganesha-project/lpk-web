@@ -1,0 +1,5 @@
+export const MAILLINK = "mailto:admin@hidamarikenshusenta.com?subject=Konsultasi%20Ganesha%20Consulting&body=Halo%20kak%20saya%20mau%20konsultasi%20nih"
+export const WALINK = "https://api.whatsapp.com/send?phone=62881025220845&text=Halo%20LPK%20Hidamari%20Kenshu%20Senta"
+export const IGLINK = "https://www.instagram.com/"
+export const FBLINK = "https://www.facebook.com/"
+export const LINKEDINLINK = "https://www.linkedin.com/"

@@ -165,9 +165,9 @@ export const RegisterForm = () => {
                         <div className="form-control w-full">
                             <div className="flex justify-center">
                                 <label className="label cursor-pointer">
-                                    <input type="radio" name="lulusan" value="lainnyaInput" className="radio checked:bg-red-500 border-red-600 border" />
+                                    <input type="radio" name="lulusan" value="lulusan_lainnya" className="radio checked:bg-red-500 border-red-600 border" />
                                 </label>
-                                <input type="text" id="lainnyaInput" name="lainnyaInput" className="border-b border-b-red-500 px-2 py-1 ml-2" placeholder="Masukkan lulusan lainnya" />
+                                <input type="text" id="lainnyaInput" name="lulusan_lainnya" className="border-b border-b-red-500 px-2 py-1 ml-2" placeholder="Masukkan lulusan lainnya" />
                             </div>
                         </div>
                     </div>

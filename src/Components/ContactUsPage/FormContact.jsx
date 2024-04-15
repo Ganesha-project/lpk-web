@@ -3,6 +3,7 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6"
 import { IoLogoWhatsapp, IoMdMail } from "react-icons/io"
 import { MdCall } from "react-icons/md"
 import { MAIL } from "../../../MAIL"
+import { FBLINK, IGLINK, LINKEDINLINK, MAILLINK, WALINK } from "../Links/Links"
 
 export const FormContact = () => {
     return (
@@ -17,30 +18,36 @@ export const FormContact = () => {
                             Grand Wisata, Jalan Celebration Boulevard Blok AA 15 - Nomor 29, Desa/Kelurahan Lambangsari, Kec. Tambun Selatan, Kab. Bekasi, Provinsi Jawa Barat, 17510.
                         </p>
                         <Link
-                            href={''}
+                            href={'tel:02189090212'}
+                            type="tel"
                             className="hover:bg-red-500 hover:text-white duration-300 flex gap-2 items-center border text-red-500 border-red-500 py-2 px-3 lg:w-[25lvw] ">
                             <MdCall size={20} />
                             02189090212
                         </Link>
                         <Link
-                            href={''}
+                            href={MAILLINK}
                             className="hover:bg-white hover:text-red-500 duration-300 flex gap-2 items-center border border-red-500 bg-red-500 text-white py-2 px-3 lg:w-[25lvw] ">
                             <IoMdMail size={20} />
-                            hidamarikenshusenta@gmail.com
+                            admin@hidamarikenshusenta.com
                         </Link>
                         <div className="flex gap-3">
                             <Link
-                                href={''}
+                                href={WALINK}
+                                className="flex gap-2 items-center rounded-full hover:bg-red-600 duration-300 bg-red-500 text-white p-3 w-fit ">
+                                <IoLogoWhatsapp size={20} />
+                            </Link>
+                            <Link
+                                href={IGLINK}
                                 className="flex gap-2 items-center rounded-full hover:bg-red-600 duration-300 bg-red-500 text-white p-3 w-fit ">
                                 <FaInstagram size={20} />
                             </Link>
                             <Link
-                                href={''}
+                                href={FBLINK}
                                 className="flex gap-2 items-center rounded-full hover:bg-red-600 duration-300 bg-red-500 text-white p-3 w-fit ">
                                 <FaFacebook size={20} />
                             </Link>
                             <Link
-                                href={''}
+                                href={LINKEDINLINK}
                                 className="flex gap-2 items-center rounded-full hover:bg-red-600 duration-300 bg-red-500 text-white p-3 w-fit ">
                                 <FaLinkedin size={20} />
                             </Link>

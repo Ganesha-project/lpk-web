@@ -5,6 +5,7 @@ import { Navbar } from "@/Components/Navbar";
 import { Footer } from "@/Components/Footer";
 import { FloatingButtonContainer } from "@/Components/FloatingBtnContainer";
 import { Buttons } from "@/Components/Reusable/Buttons";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: "LPK Hidamari",
@@ -28,10 +29,8 @@ export default function RootLayout({ children }) {
           <Buttons />
         </FloatingButtonContainer>
         {children}
+        <Analytics />
         <Footer />
-        {/* <Script src="https://cdn.tailwindcss.com"></Script> */}
-        {/* <Script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></Script> */}
-        {/* <Script src="script.js" /> */}
         <Script id="google-translate-script" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" />
         <Script id="google-translate-initializer">
           {`

@@ -29,7 +29,7 @@ export const Footer = () => {
                 <nav>
                     <h6 className="text-xs font-bold uppercase text-red-500">Alamat</h6>
                     <Link
-                        href={''} className="lg:w-[15lvw] link link-hover">
+                        href={'https://maps.app.goo.gl/rS9b4dXEUPpDgBXAA'} className="lg:w-[15lvw] link link-hover">
                         Grand Wisata, Jalan Celebration Boulevard Blok AA 15 - Nomor 29, Desa/Kelurahan Lambangsari, Kec. Tambun Selatan, Kab. Bekasi, Provinsi Jawa Barat, 17510.
                     </Link>
                 </nav>

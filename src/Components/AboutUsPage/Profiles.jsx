@@ -14,8 +14,8 @@ export const Profiles = () => {
                             <Image
                                 width={500}
                                 height={500}
-                                className="min-w-[35lvw] h-[50lvh] lg:h-[35lvw] object-cover "
-                                src={'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=2808&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'}
+                                className="min-w-[35lvw] h-[50lvh] lg:h-[35lvw] object-cover object-top"
+                                src={'/eviei.PNG'}
                                 alt=""
                             />
                             <div className="absolute inset-5 flex flex-col justify-end">
@@ -55,7 +55,7 @@ export const Profiles = () => {
                                 width={500}
                                 height={500}
                                 className="min-w-[35lvw] h-[50lvh] lg:h-[35lvw] object-cover "
-                                src={'https://images.unsplash.com/photo-1579783901467-31b604eac7a8?q=80&w=2861&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'}
+                                src={'/febriyandi.jpeg'}
                                 alt=""
                             />
                             <div className="absolute inset-5 flex flex-col justify-end">

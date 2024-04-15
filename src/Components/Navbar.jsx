@@ -78,7 +78,7 @@ export const Navbar = () => {
                                     <li>
                                         <Link
                                             className={path === '/job' ? 'text-white bg-red-600 text-center rounded-full font-bold' : ''}
-                                            href={"faq"}>
+                                            href={"job"}>
                                             Job
                                         </Link>
                                     </li>

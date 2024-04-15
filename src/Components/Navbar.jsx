@@ -34,7 +34,7 @@ export const Navbar = () => {
                         <div className="drawer">
                             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
                             <div tabIndex={0} role="button" className="drawer-content btn btn-ghost btn-circle lg:hidden">
-                                <label htmlFor="my-drawer" className="drawer-button"><HiMenuAlt2 size={25} className={`${noBannerPath && isScrolled ? 'text-white' : 'text-slate-900'} ${specialPath ? "text-white" : ""}`} /></label>
+                                <label htmlFor="my-drawer" className="drawer-button"><HiMenuAlt2 size={25} className={`${noBannerPath && isScrolled ? 'text-white' : 'text-slate-900'} ${specialPath && homePath ? "text-white" : ""}`} /></label>
                             </div>
                             <div className="drawer-side z-[60]">
                                 <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>

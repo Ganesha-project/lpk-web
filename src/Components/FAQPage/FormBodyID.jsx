@@ -1,6 +1,7 @@
 import { IoLogoWhatsapp } from "react-icons/io"
 import { FormID } from "./FormID"
 import Link from "next/link"
+import { WALINK } from "../Links/Links"
 
 export const FormBodyID = () => {
     return (
@@ -19,9 +20,11 @@ export const FormBodyID = () => {
                     <p className="text-xl capitalize text-center">
                         Atau hubungi kami melalui WhatsApp
                     </p>
-                    <div className="text-gray-800">
+                    <Link
+                        href={WALINK}
+                        className="text-gray-800">
                         <IoLogoWhatsapp size={25} />
-                    </div>
+                    </Link>
                 </Link>
             </div>
         </>

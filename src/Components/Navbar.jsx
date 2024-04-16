@@ -28,13 +28,13 @@ export const Navbar = () => {
     }, []);
     return (
         <>
-            <div className={`navbar ${isScrolled ? "bg-[#00000076] backdrop-blur-lg !text-white" : "bg-transparent lg:text-gray-800"} ${specialPath ? "!text-white" : "text-gray-800"} ${noBannerPath ? 'text-slate-900' : ''} ${homePath ? "text-white lg:text-gray-900" : "text-gray-900"} duration-300 ease-in-out fixed z-50`}>
+            <div className={`navbar ${isScrolled ? "bg-[#00000076] backdrop-blur-lg !text-white" : "bg-transparent lg:text-gray-800"} ${specialPath ? "!text-white" : "text-gray-800"} ${noBannerPath ? 'text-slate-900' : ''} ${homePath ? "text-white lg:text-gray-900" : ""} duration-300 ease-in-out fixed z-50`}>
                 <div className="navbar-start lg:pl-24">
                     <div className="dropdown">
                         <div className="drawer">
                             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
                             <div tabIndex={0} role="button" className="drawer-content btn btn-ghost btn-circle lg:hidden">
-                                <label htmlFor="my-drawer" className="drawer-button"><HiMenuAlt2 size={25} className={`${noBannerPath && isScrolled ? 'text-white' : 'text-slate-900'} ${specialPath ? "text-white" : ""} ${homePath ? 'lg:text-gray-800 text-white': ''}`} /></label>
+                                <label htmlFor="my-drawer" className="drawer-button"><HiMenuAlt2 size={25} className={`${noBannerPath && isScrolled ? 'text-white' : 'text-slate-900'} ${specialPath ? "text-white" : ""} ${homePath ? "text-white" : ""}`} /></label>
                             </div>
                             <div className="drawer-side z-[60]">
                                 <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
@@ -81,14 +81,14 @@ export const Navbar = () => {
                                     </li>
                                     <li>
                                         <Link
-                                            className={path === '/faq' ? 'text-white bg-red-600 text-center rounded-full font-bold' : ''}
+                                            className={path === '/faq' ? 'text-red-600 font-bold' : ''}
                                             href={"faq"}>
                                             FAQ
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
-                                            className={path === '/job' ? 'text-white bg-red-600 text-center rounded-full font-bold' : ''}
+                                            className={path === '/job' ? 'text-red-600 font-bold' : ''}
                                             href={"job"}>
                                             Job
                                         </Link>

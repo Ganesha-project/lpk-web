@@ -21,16 +21,18 @@ export const FormJob = () => {
                             className="flex flex-col gap-5 w-full"
                             method="POST"
                         >
-                            <label className="input shadow-2xl rounded-none border-none flex items-center gap-2">
-                                担当者
+                            <label htmlFor="1" className="-mb-3">担当者</label>
+                            <label id="1" className="input shadow-2xl rounded-none border-none flex items-center gap-2">
                                 <input type="text" name="担当者" className="grow" placeholder="" required />
                             </label>
-                            <label className="input shadow-2xl rounded-none border-none flex items-center gap-2">
-                                会社名
+
+                            <label htmlFor="2" className="-mb-3">会社名</label>
+                            <label id="2" className="input shadow-2xl rounded-none border-none flex items-center gap-2">
                                 <input type="email" name="会社名" className="grow" placeholder="" required />
                             </label>
-                            <label className="input shadow-2xl rounded-none border-none flex items-center gap-2">
-                                メール*
+
+                            <label htmlFor="3" className="-mb-3">メール•</label>
+                            <label id="3" className="input shadow-2xl rounded-none border-none flex items-center gap-2">
                                 <input type="number" name="メール*" className="grow" placeholder="" required />
                             </label>
                             <p className="-mb-3">

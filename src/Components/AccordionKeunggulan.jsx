@@ -1,6 +1,6 @@
 
-import * as Icons from "react-icons/fa6"; // Import semua ikon dari fa6
-import * as RiIcons from "react-icons/ri"; // Import semua ikon dari Ri
+import * as Icons from "react-icons/fa6"; 
+import * as RiIcons from "react-icons/ri";
 import * as MdIcons from "react-icons/md";
 import * as Fa6Icons from "react-icons/fa6";
 import * as FaIcons from "react-icons/fa";
@@ -16,9 +16,9 @@ const Keunggulan = [
     desc: "Tim kami terdiri dari para ahli yang siap memberikan bimbingan personal kepada setiap peserta, membantu mereka mengembangkan potensi terbaik mereka dalam mencapai tujuan karir di Jepang."
   },
   {
-    name: "Jaringan Industri yang Luas",
-    icon: "MdConnectWithoutContact",
-    desc: "Kami memiliki kemitraan yang solid dengan perusahaan-perusahaan terkemuka di Jepang, memberikan akses kepada peserta untuk peluang kerja yang menarik dan berkembang di berbagai sektor industri."
+    name: "Pelatihan Berbasis Industri",
+    icon: "MdOutlineWork",
+    desc: "Kami menawarkan pelatihan yang berbasis pada kebutuhan industri, dengan menyesuaikan kurikulum kami sesuai dengan perkembangan terbaru dan tren dalam industri tertentu."
   },
   {
     name: "Lingkungan Belajar yang Inklusif",
@@ -40,7 +40,7 @@ const IconMap = {
   FaCheckDouble: Icons.FaCheckDouble,
   FaMoneyCheck: Icons.FaMoneyCheck,
   RiSparkling2Fill: RiIcons.RiSparkling2Fill,
-  MdConnectWithoutContact: MdIcons.MdConnectWithoutContact,
+  MdOutlineWork: MdIcons.MdOutlineWork,
   FaPeopleRoof: Fa6Icons.FaPeopleRoof,
   FaBookOpenReader: Fa6Icons.FaBookOpenReader,
   FaMedal: FaIcons.FaMedal,

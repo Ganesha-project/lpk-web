@@ -44,22 +44,22 @@ export const Banner = () => {
                                 <div className="flex justify-between items-center">
                                     <TbLicense size={45} />
                                     <p className="capitalize text-xl font-medium">
-                                        Berlisensi SO
+                                        Terpercaya
                                     </p>
                                 </div>
                                 <p className="mt-5 font-light">
-                                    Dengan Lisensi SO yang kami miliki, Kamu dapat percayakan kualitas program pelatihan kamu ke LPK Hidamari Kenshu Senta!
+                                    Dengan berbagai macam program dan para pengajar yang terbaik kamu dapat percayakan kualitas program pelatihan kamu ke LPK Hidamari Kenshu Senta!
                                 </p>
                             </div>
                             <div className="border-r flex-grow border-b border-l border-gray-700 p-4 lg:p-12 bg-red-400 text-white w-[70lvw] lg:w-full">
                                 <div className="flex justify-between items-center">
                                     <TfiMedall size={45} />
                                     <p className="capitalize text-xl font-medium">
-                                        Terakreditasi
+                                        Berpengalaman
                                     </p>
                                 </div>
                                 <p className="mt-5 font-light">
-                                    Kami bangga menjadi Lembaga yang terakreditasi, menandakan komitmen kami dalam menyediakan pendidikan berkualitas tinggi yang memenuhi standar yang ketat.
+                                    Pengajar di LPK Hidamari Kenshu Senta sangat berpengalaman dan memiliki kemampuan serta ilmu yang mempermudah memenuhi standar kerja di Jepang.
                                 </p>
                             </div>
                         </div>

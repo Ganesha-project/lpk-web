@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FaLanguage } from "react-icons/fa6";
-import { HiMenuAlt2, HiMenuAlt3 } from "react-icons/hi";
+import { HiMenuAlt2 } from "react-icons/hi";
 
 
 export const Navbar = () => {
@@ -65,13 +65,13 @@ export const Navbar = () => {
                                             Program
                                         </Link>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <Link
                                             className={path === '/gallery' ? 'text-red-600 font-bold' : ''}
                                             href={"gallery"}>
                                             Gallery
                                         </Link>
-                                    </li>
+                                    </li> */}
                                     <li>
                                         <Link
                                             className={path === '/about-us' ? 'text-red-600 font-bold' : ''}
@@ -138,13 +138,13 @@ export const Navbar = () => {
                                     Program
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link
                                     className={path === '/gallery' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}
                                     href={"gallery"}>
                                     Gallery
                                 </Link>
-                            </li>
+                            </li> */}
                             <li>
                                 <Link
                                     className={path === '/about-us' ? 'text-white bg-red-600 px-3 py-1 text-center rounded-full font-bold' : ''}

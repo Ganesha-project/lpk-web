@@ -4,7 +4,7 @@ import { RiWhatsappFill } from "react-icons/ri"
 import { useState, useEffect } from 'react';
 import { MdAppRegistration } from "react-icons/md";
 import { WALINK } from "../Links/Links";
-
+ 
 export const Buttons = () => {
     const [isVisible, setIsVisible] = useState(false);
 

@@ -15,7 +15,6 @@ export const Banner = () => {
                         <div className="lg:p-12 p-5 border-t border-b border-gray-700 lg:w-[65%]">
                             <h1 className="lg:text-6xl text-2xl font-medium leading-[1] uppercase subpixel-antialiased">
                                 Ayo Kerja dan Magang di <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-rose-400">Jepang</span> dan raih impianmu!
-
                             </h1>
                             <div className="lg:px-3 lg:py-3 border-gray-700 lg:border rounded-full flex items-center mt-5 justify-between">
                                 <p className="capitalize pl-5 lg:block hidden">

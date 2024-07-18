@@ -25,6 +25,19 @@ export const FormContact = () => {
                             02189090212
                         </Link>
                         <Link
+                            href={'tel:0881025220845'}
+                            className="hover:bg-white hover:text-red-500 duration-300 flex gap-2 items-center border border-red-500 bg-red-500 text-white py-2 px-3 lg:w-[25lvw] ">
+                            <MdCall size={20} />
+                            0881025220845
+                        </Link>
+                        <Link
+                            href={'mailto:hidamarikenshusenta@gmail.com'}
+                            type="tel"
+                            className="hover:bg-red-500 hover:text-white duration-300 flex gap-2 items-center border text-red-500 border-red-500 py-2 px-3 lg:w-[25lvw] ">
+                            <IoMdMail size={20} />
+                            hidamarikenshusenta@gmail.com
+                        </Link>
+                        <Link
                             href={MAILLINK}
                             className="hover:bg-white hover:text-red-500 duration-300 flex gap-2 items-center border border-red-500 bg-red-500 text-white py-2 px-3 lg:w-[25lvw] ">
                             <IoMdMail size={20} />

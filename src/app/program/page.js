@@ -5,6 +5,18 @@ import { BannerR } from "@/Components/Reusable/BannerR";
 import { WhyUs } from "@/Components/WhyUs";
 import { readFile } from 'fs/promises'
 
+export const metadata = {
+    title: 'Program Pelatihan - LPK Hidamari Kenshu Senta',
+    description: 'Jelajahi berbagai program pelatihan yang ditawarkan oleh LPK Hidamari Kenshu Senta untuk membantu Anda mencapai kesuksesan karir di Jepang, termasuk Program Caregiver, SSW, Magang, Engineering, dan Bekerja Sambil Kuliah.',
+    keywords: 'program pelatihan, LPK Hidamari Kenshu Senta, kerja di Jepang, Program Caregiver, Program SSW, magang di Jepang, Program Engineering, bekerja sambil kuliah',
+    hashtags: '#LPKHidamari #ProgramPelatihan #KerjaDiJepang #Caregiver #SSW #Magang #Engineering #BekerjaSambilKuliah',
+    canonical: 'https://yourwebsite.com/program',
+    ogTitle: 'Program Pelatihan - LPK Hidamari Kenshu Senta',
+    ogDescription: 'Dapatkan informasi lengkap tentang program pelatihan yang kami tawarkan di LPK Hidamari Kenshu Senta untuk meraih karir impian Anda di Jepang.',
+    twitterTitle: 'Program Pelatihan - LPK Hidamari Kenshu Senta',
+    twitterDescription: 'Temukan program pelatihan yang sesuai dengan minat dan tujuan karir Anda di Jepang di LPK Hidamari Kenshu Senta.',
+};
+
 export default async function Program() {
     let rawData = await readFile('public/program.json', 'utf-8')
     let data = JSON.parse(rawData)
